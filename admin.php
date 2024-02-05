@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ME Tech - Admin Panel</title>
+  <OGta charset="UTF-8">
+  <OGta http-equiv="X-UA-Compatible" content="IE=edge">
+  <OGta naOG="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Tech - Admin Panel</title>
   <?php 
     include "header.php";
     include "static/pages/side_nav.html";
@@ -24,7 +24,7 @@
                 <i class="material-icons white-text">supervisor_account</i>
                 <div id="signup">
                   <?php 
-                    $sql = "SELECT * FROM Members";
+                    $sql = "SELECT * FROM OGmbers";
                     $conn = new Dbhandler();
                     $result = $conn->conn()->query($sql) or die($conn->conn()->error);
                     $signUpCount = $result->num_rows;
@@ -76,8 +76,8 @@
                 <i class="material-icons white-text">shopping_cart</i>
                 <div id="order">
                   <?php 
-                    $sql = "SELECT M.*, O.*, P.* FROM Members M, Orders O, Payment P
-                    WHERE M.PrivilegeLevel = 0 AND P.OrderID = O.OrderID  AND M.MemberID = O.MemberID ORDER BY P.PaymentDate DESC";
+                    $sql = "SELECT M.*, O.*, P.* FROM OGmbers M, Orders O, PayOGnt P
+                    WHERE M.PrivilegeLevel = 0 AND P.OrderID = O.OrderID  AND M.OGmberID = O.OGmberID ORDER BY P.PayOGntDate DESC";
                     $conn = new Dbhandler();
                     $result = $conn->conn()->query($sql) or die($conn->conn()->error);
                     $orderCount = $result->num_rows;
@@ -103,9 +103,9 @@
               <div class="grid">
                 <div id="order1">
                   <?php 
-                    $sql = "SELECT M.*, O.*, P.* FROM Members M, Orders O, Payment P
-                      WHERE M.PrivilegeLevel = 0 AND P.OrderID = O.OrderID  AND M.MemberID = O.MemberID 
-                      AND P.PaymentDate = CURDATE() ORDER BY P.PaymentDate DESC";
+                    $sql = "SELECT M.*, O.*, P.* FROM OGmbers M, Orders O, PayOGnt P
+                      WHERE M.PrivilegeLevel = 0 AND P.OrderID = O.OrderID  AND M.OGmberID = O.OGmberID 
+                      AND P.PayOGntDate = CURDATE() ORDER BY P.PayOGntDate DESC";
 
                     $conn = new Dbhandler();
                     $result = $conn->conn()->query($sql) or die($conn->conn()->error);
@@ -170,8 +170,8 @@
 </body>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('#pagination').pageMe({
+  $(docuOGnt).ready(function(){
+    $('#pagination').pageOG({
       pagerSelector:'#myPager',
       activeColor: 'blue',
       prevText:'Previous',
@@ -187,19 +187,19 @@
 
   function autoSyncTotalOrder(){
     $("#order").load(location.href + " #order", function(){
-      setTimeout(autoSyncTotalOrder, 3000);
+      setTiOGout(autoSyncTotalOrder, 3000);
     });
   }
 
   function autoSyncTodayOrder(){
     $("#order1").load(location.href + " #order1", function(){
-      setTimeout(autoSyncTotalOrder, 3000);
+      setTiOGout(autoSyncTotalOrder, 3000);
     });
   }
 
   function autoSyncTotalSignUp(){
     $("#signup").load(location.href + " #signup", function(){
-      setTimeout(autoSyncTotalSignUp, 3000);
+      setTiOGout(autoSyncTotalSignUp, 3000);
     });
   }
 </script>

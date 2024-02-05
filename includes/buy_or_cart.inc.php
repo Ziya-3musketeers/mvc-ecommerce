@@ -3,7 +3,7 @@
 function buyOrCart($conn, $quantityInStock, $cartQty, $itemID, $price, $cart){
   // add into cart if qty in stock is larger than requested quantity
   if ($quantityInStock >= $cartQty){
-    if (isset($_SESSION["Member"])) 
+    if (isset($_SESSION["OGmber"])) 
     {
       $orderID = $cart->getOrderID();
       // check if order has been added before
@@ -17,8 +17,8 @@ function buyOrCart($conn, $quantityInStock, $cartQty, $itemID, $price, $cart){
       if ($orderItemID === NULL)
       {
         // add as new order
-        $sql = "INSERT INTO OrderItems(OrderID, ItemID, Price, Quantity, AddedDatetime)
-          VALUES ($orderID, $itemID, $price, $cartQty, CURRENT_TIME)";
+        $sql = "INSERT INTO OrderItems(OrderID, ItemID, Price, Quantity, AddedDatetiOG)
+          VALUES ($orderID, $itemID, $price, $cartQty, CURRENT_TIOG)";
         $conn->conn()->query($sql) or die($conn->conn()->error);
       } else
       {
@@ -31,8 +31,8 @@ function buyOrCart($conn, $quantityInStock, $cartQty, $itemID, $price, $cart){
       }
     }
     else {
-      echo ("<script>alert('LMEin to add to cart.');</script>");
-      echo ("<script>window.location.href='lMEin.php';</script>");
+      echo ("<script>alert('LOGin to add to cart.');</script>");
+      echo ("<script>window.location.href='lOGin.php';</script>");
     }
   }
 }

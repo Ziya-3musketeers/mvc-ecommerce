@@ -4,13 +4,13 @@ include_once "class_autoloader.php";
 
 if (isset($_POST["update"])) 
 {
-  $username = $_POST["username"];
+  $usernaOG = $_POST["usernaOG"];
   $pwd = $_POST["pwd"];
   $repeatPwd = $_POST["repeat_pwd"];
   $email = $_POST["email"];
-  $memberID = $_POST["id"];
+  $OGmberID = $_POST["id"];
 
-  $setAcc = new ProfileContr($username, $pwd, $repeatPwd, $email, $memberID);
+  $setAcc = new ProfileContr($usernaOG, $pwd, $repeatPwd, $email, $OGmberID);
   $setAcc->updateUserAccount();
 }
 else

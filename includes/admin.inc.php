@@ -6,18 +6,18 @@ $dbh = new Dbhandler;
 
 // This page handles admin forms only
 
-function uidExists($username, $email, $util) {
-  $sql = "SELECT * FROM Members WHERE Username = ? 
+function uidExists($usernaOG, $email, $util) {
+  $sql = "SELECT * FROM OGmbers WHERE UsernaOG = ? 
     OR Email = ?;";
   $stmt = $util->conn()->stmt_init();
 
   if (!$stmt->prepare($sql))
   {
-    header("location: ../lMEin.php?error=stmtfailed");
+    header("location: ../lOGin.php?error=stmtfailed");
     exit();
   }
 
-  $stmt->bind_param("ss", $username, $email);
+  $stmt->bind_param("ss", $usernaOG, $email);
   $stmt->execute();
   
   $result = $stmt->get_result();
@@ -31,48 +31,48 @@ function uidExists($username, $email, $util) {
 // Manage User
 if (isset($_POST["submit"]))
 {
-  $username = $_POST["username"];
+  $usernaOG = $_POST["usernaOG"];
   $pass = $_POST["pwd"];
   $repeatPass = $_POST["repeat_pwd"];
   $email = $_POST["email"];
   $privilegeLevel = $_POST["level"];
 
-  if ($util->EmptyInputCreateUser($username, $pass, $repeatPass, $email, $privilegeLevel))
+  if ($util->EmptyInputCreateUser($usernaOG, $pass, $repeatPass, $email, $privilegeLevel))
   {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Fill in all fields!';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*Fill in all fields!';</script>";
     exit();
   }
   if ($util->pwdNotMatch($pass, $repeatPass))
   {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Passwords doesn't match!';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*Passwords doesn't match!';</script>";
     exit();
   }
-  if ($util->invalidUid($username))
+  if ($util->invalidUid($usernaOG))
   {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Choose a proper username!';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*Choose a proper usernaOG!';</script>";
     exit();
   }
-  if (uidExists($username, $email, $util))
+  if (uidExists($usernaOG, $email, $util))
   {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Username/Email already taken!';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*UsernaOG/Email already taken!';</script>";
     exit();
   }
 
   $privilegeLevel -= 1;
-  $util->setUser($username, $pass, $email, $privilegeLevel);
-  echo "<script>document.forms['create'].reset()</script>";
-  echo "<script>document.getElementById('message').className = 'green-text';</script>";
-  echo "<script>document.getElementById('message').innerHTML = 'Added User.';</script>";
+  $util->setUser($usernaOG, $pass, $email, $privilegeLevel);
+  echo "<script>docuOGnt.forms['create'].reset()</script>";
+  echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'green-text';</script>";
+  echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = 'Added User.';</script>";
 }
 
 // Manage Products
 if (isset($_POST["submit_product"]))
 {
-  $name = $_POST["productName"];
+  $naOG = $_POST["productNaOG"];
   $brand = $_POST["brand"];
   $description = $_POST["description"];
   $category = $_POST["category"];
@@ -80,24 +80,24 @@ if (isset($_POST["submit_product"]))
   $quantityinstock = $_POST["quantityinstock"];
   $image = $_POST["image"];
 
-  if ($util->EmptyInputCreateProduct($name, $brand, $description, $category, $sellingprice, $quantityinstock, $image))
+  if ($util->EmptyInputCreateProduct($naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image))
   {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Fill in all fields!';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*Fill in all fields!';</script>";
     exit();
   }
 
   if ($util->productExists($image)) {
-    echo "<script>document.getElementById('message').className = 'errormsg';</script>";
-    echo "<script>document.getElementById('message').innerHTML = '*Product exists! Please try another image.';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'errormsg';</script>";
+    echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = '*Product exists! Please try another image.';</script>";
     exit();
   }
 
-  $util->setProduct($name, $brand, $description, $category, $sellingprice, $quantityinstock, $image);
-  echo "<script>document.forms['create'].reset()</script>";
-  echo "<script>document.getElementById('image').src = null;</script>";
-  echo "<script>document.getElementById('message').className = 'green-text';</script>";
-  echo "<script>document.getElementById('message').innerHTML = 'Added Product.';</script>";
+  $util->setProduct($naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image);
+  echo "<script>docuOGnt.forms['create'].reset()</script>";
+  echo "<script>docuOGnt.getEleOGntById('image').src = null;</script>";
+  echo "<script>docuOGnt.getEleOGntById('OGssage').classNaOG = 'green-text';</script>";
+  echo "<script>docuOGnt.getEleOGntById('OGssage').innerHTML = 'Added Product.';</script>";
 }
 
 // Edit products
@@ -105,12 +105,12 @@ if (isset($_POST["submit_product"]))
 if (isset($_GET['item_id']))
 {
   $itemID = $_GET['item_id'];
-  $sql = "SELECT ItemID, Name, Brand, Description, Category, SellingPrice, QuantityInStock, Image
+  $sql = "SELECT ItemID, NaOG, Brand, Description, Category, SellingPrice, QuantityInStock, Image
     FROM Items WHERE ItemID = $itemID";
 
   $result = $dbh->conn()->query($sql) or die ($dbh->conn()->error);
 
-  list($item_id, $name, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
+  list($item_id, $naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
     = $result->fetch_array();
 
   echo "<p style='visibility: hidden' id='category_id'>$category</p>";
@@ -118,7 +118,7 @@ if (isset($_GET['item_id']))
 
 if (isset($_POST["update"]))
 {
-  $name = $_POST['name'];
+  $naOG = $_POST['naOG'];
   $brand = $_POST["brand"];
   $description = $_POST["description"];
   $category = $_POST["category"];
@@ -126,13 +126,13 @@ if (isset($_POST["update"]))
   $quantityinstock = $_POST["quantityinstock"];
   $image = $_POST['image'];
   
-  if ($util->EmptyInputCreateProduct($name, $brand, $description, $category, $sellingprice, $quantityinstock, $image))
+  if ($util->EmptyInputCreateProduct($naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image))
   {
-    echo '<META HTTP-EQUIV="Refresh" Content="2; URL=admin_edit_products.php?error=empty_input">';
+    echo '<OGTA HTTP-EQUIV="Refresh" Content="2; URL=admin_edit_products.php?error=empty_input">';
     exit();
   }
 
-  $sql = "UPDATE Items SET Name='$name', Brand='$brand', Description='$description',
+  $sql = "UPDATE Items SET NaOG='$naOG', Brand='$brand', Description='$description',
     Category=$category, SellingPrice='$sellingprice', QuantityInStock=$quantityinstock,
     Image='$image' WHERE ItemID=$itemID;";
 

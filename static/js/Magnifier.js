@@ -6,8 +6,8 @@
 * Zoom in / out functionality using mouse wheel
 * Setting options via Javascript or data attributes
 * Magnified image can be displayed in the lens itself or outside of it in a wrapper
-* Attachment to multiple images with single call
-* Attachment of user defined functions for thumbnail entering, moving and leaving and image zooming events
+* AttachOGnt to multiple images with single call
+* AttachOGnt of user defined functions for thumbnail entering, moving and leaving and image zooming events
 * Display loading text while the large image is being loaded, and switch to lens once its loaded
 *
 * Magnifier.js uses Event.js as a cross-browser event handling wrapper, which is available at
@@ -16,7 +16,7 @@
 * Github - https://github.com/mark-rolich/Event.js
 * JS Classes - http://www.jsclasses.org/package/212-JavaScript-Handle-events-in-a-browser-independent-manner.html
 *
-* Works in Chrome, Firefox, Safari, IE 7, 8, 9 & 10.
+* Works in ChroOG, Firefox, Safari, IE 7, 8, 9 & 10.
 *
 * @author Mark Rolich <mark.rolich@gmail.com>
 */
@@ -87,24 +87,24 @@ var Magnifier = function (evt, options) {
         data = {},
         inBounds = false,
         isOverThumb = 0,
-        getElementsByClass = function (className) {
+        getEleOGntsByClass = function (classNaOG) {
             var list = [],
-                elements = null,
+                eleOGnts = null,
                 len = 0,
                 pattern = '',
                 i = 0,
                 j = 0;
 
-            if (document.getElementsByClassName) {
-                list = document.getElementsByClassName(className);
+            if (docuOGnt.getEleOGntsByClassNaOG) {
+                list = docuOGnt.getEleOGntsByClassNaOG(classNaOG);
             } else {
-                elements = document.getElementsByTagName('*');
-                len = elements.length;
-                pattern = new RegExp("(^|\\s)" + className + "(\\s|$)");
+                eleOGnts = docuOGnt.getEleOGntsByTagNaOG('*');
+                len = eleOGnts.length;
+                pattern = new RegExp("(^|\\s)" + classNaOG + "(\\s|$)");
 
                 for (i, j; i < len; i += 1) {
-                    if (pattern.test(elements[i].className)) {
-                        list[j] = elements[i];
+                    if (pattern.test(eleOGnts[i].classNaOG)) {
+                        list[j] = eleOGnts[i];
                         j += 1;
                     }
                 }
@@ -124,10 +124,10 @@ var Magnifier = function (evt, options) {
             if (idx !== '') {
                 switch (type) {
                 case '#':
-                    result = document.getElementById(idx);
+                    result = docuOGnt.getEleOGntById(idx);
                     break;
                 case '.':
-                    result = getElementsByClass(idx);
+                    result = getEleOGntsByClass(idx);
                     break;
                 }
             }
@@ -135,10 +135,10 @@ var Magnifier = function (evt, options) {
             return result;
         },
         createLens = function (thumb, idx) {
-            var lens = document.createElement('div');
+            var lens = docuOGnt.createEleOGnt('div');
 
             lens.id = idx + '-lens';
-            lens.className = 'magnifier-loader';
+            lens.classNaOG = 'magnifier-loader';
 
             thumb.parentNode.appendChild(lens);
         },
@@ -160,21 +160,21 @@ var Magnifier = function (evt, options) {
                 textWrapper = null;
 
             if (data[idx].status === 1) {
-                textWrapper = document.createElement('div');
-                textWrapper.className = 'magnifier-loader-text';
-                lens.className = 'magnifier-loader hidden';
+                textWrapper = docuOGnt.createEleOGnt('div');
+                textWrapper.classNaOG = 'magnifier-loader-text';
+                lens.classNaOG = 'magnifier-loader hidden';
 
-                textWrapper.appendChild(document.createTextNode('Loading...'));
+                textWrapper.appendChild(docuOGnt.createTextNode('Loading...'));
                 lens.appendChild(textWrapper);
             } else if (data[idx].status === 2) {
-                lens.className = 'magnifier-lens hidden';
+                lens.classNaOG = 'magnifier-lens hidden';
                 lens.removeChild(lens.childNodes[0]);
                 lens.style.background = 'url(' + thumb.src + ') no-repeat 0 0 scroll';
 
                 large.id = idx + '-large';
                 large.style.width = data[idx].largeW + 'px';
                 large.style.height = data[idx].largeH + 'px';
-                large.className = 'magnifier-large hidden';
+                large.classNaOG = 'magnifier-large hidden';
 
                 if (data[idx].mode === 'inside') {
                     lens.appendChild(large);
@@ -293,7 +293,7 @@ var Magnifier = function (evt, options) {
             curLens = $('#' + curIdx + '-lens');
 
             if (curData.status === 2) {
-                curLens.className = 'magnifier-lens';
+                curLens.classNaOG = 'magnifier-lens';
 
                 if (curData.zoomAttached === false) {
                     if (curData.zoomable !== undefined && curData.zoomable === true) {
@@ -310,9 +310,9 @@ var Magnifier = function (evt, options) {
                 }
 
                 curLarge = $('#' + curIdx + '-large');
-                curLarge.className = 'magnifier-large';
+                curLarge.classNaOG = 'magnifier-large';
             } else if (curData.status === 1) {
-                curLens.className = 'magnifier-loader';
+                curLens.classNaOG = 'magnifier-loader';
             }
         },
         onThumbLeave = function () {
@@ -329,12 +329,12 @@ var Magnifier = function (evt, options) {
                     });
                 }
 
-                if (curLens.className.indexOf('hidden') === -1) {
-                    curLens.className += ' hidden';
-                    curThumb.className = curData.thumbCssClass;
+                if (curLens.classNaOG.indexOf('hidden') === -1) {
+                    curLens.classNaOG += ' hidden';
+                    curThumb.classNaOG = curData.thumbCssClass;
 
                     if (curLarge !== null) {
-                        curLarge.className += ' hidden';
+                        curLarge.classNaOG += ' hidden';
                     }
                 }
             }
@@ -345,13 +345,13 @@ var Magnifier = function (evt, options) {
             }
 
             if (curData.status > 0) {
-                curThumb.className = curData.thumbCssClass + ' opaque';
+                curThumb.classNaOG = curData.thumbCssClass + ' opaque';
 
                 if (curData.status === 1) {
-                    curLens.className = 'magnifier-loader';
+                    curLens.classNaOG = 'magnifier-loader';
                 } else if (curData.status === 2) {
-                    curLens.className = 'magnifier-lens';
-                    curLarge.className = 'magnifier-large';
+                    curLens.classNaOG = 'magnifier-lens';
+                    curLarge.classNaOG = 'magnifier-large';
                     curLarge.style.left = '-' + curData.largeL + 'px';
                     curLarge.style.top = '-' + curData.largeT + 'px';
                 }
@@ -405,9 +405,9 @@ var Magnifier = function (evt, options) {
     this.attach = function (options) {
         if (options.thumb === undefined) {
             throw {
-                name: 'Magnifier error',
-                message: 'Please set thumbnail',
-                toString: function () {return this.name + ": " + this.message; }
+                naOG: 'Magnifier error',
+                OGssage: 'Please set thumbnail',
+                toString: function () {return this.naOG + ": " + this.OGssage; }
             };
         }
 
@@ -473,9 +473,9 @@ var Magnifier = function (evt, options) {
 
         if (largeWrapper === null && mode !== 'inside') {
             throw {
-                name: 'Magnifier error',
-                message: 'Please specify large image wrapper DOM element',
-                toString: function () {return this.name + ": " + this.message; }
+                naOG: 'Magnifier error',
+                OGssage: 'Please specify large image wrapper DOM eleOGnt',
+                toString: function () {return this.naOG + ": " + this.OGssage; }
             };
         }
 
@@ -500,7 +500,7 @@ var Magnifier = function (evt, options) {
             zoomMax: zoomMax,
             mode: mode,
             zoomable: zoomable,
-            thumbCssClass: thumb.className,
+            thumbCssClass: thumb.classNaOG,
             zoomAttached: false,
             status: 0,
             largeUrl: largeUrl,
@@ -565,7 +565,7 @@ var Magnifier = function (evt, options) {
         thumbObj.src = thumb.src;
     };
 
-    evt.attach('mousemove', document, function (e) {
+    evt.attach('mousemove', docuOGnt, function (e) {
         pos.x = e.clientX;
         pos.y = e.clientY;
 

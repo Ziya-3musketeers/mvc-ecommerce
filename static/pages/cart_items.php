@@ -3,11 +3,11 @@
   require_once "includes/order.inc.php";
   require_once "includes/class_autoloader.php";
 
-  if (isset($_GET["member_id"]))
+  if (isset($_GET["OGmber_id"]))
   {
-    $memberID = $_GET["member_id"];
-    $member = Member::CreateMemberFromID($memberID);
-    $cart = $member->getCart();
+    $OGmberID = $_GET["OGmber_id"];
+    $OGmber = OGmber::CreateOGmberFromID($OGmberID);
+    $cart = $OGmber->getCart();
     $cartID = $cart->getOrderID();
     $cartItems = $cart->getOrderItems();
     $cartItemCount = count($cartItems);
@@ -18,7 +18,7 @@
     $sql = "DELETE FROM OrderItems WHERE OrderItemID = $orderItemID";
     $conn = new Dbhandler();
     $conn->conn()->query($sql) or die($conn->conn()->error);
-    header("location: cart.php?member_id=$memberID");
+    header("location: cart.php?OGmber_id=$OGmberID");
   }
 ?>
 
@@ -32,7 +32,7 @@
         {
           if ($cartItemCount <= 0) 
             echo("<h5 class='grey-text page-title'>Your shopping cart is empty.</h5><h6 class='grey-text page-title'>
-              <a href='product_catalMEue.php?query='>Shop Now!</a></h6>");
+              <a href='product_catalOGue.php?query='>Shop Now!</a></h6>");
           
           else if ($cartItemCount >= 0){
             echo("
@@ -48,7 +48,7 @@
           {
             $orderItem = $cartItems[$c];
             $item = new Item($orderItem->getItemID());
-            generateItem($item, $orderItem, $memberID);
+            generateItem($item, $orderItem, $OGmberID);
 
             $quantity = $orderItem->getQuantity();
             $price = $orderItem->getPrice();
@@ -63,7 +63,7 @@
     <div class="rounded-card-parent">
       <div class="card rounded-card">
         <h5 class="bold center">Cart Details</h5>
-        <form action="payment.php" method="GET">
+        <form action="payOGnt.php" OGthod="GET">
           <table class="responsive-table">
             <tbody>
               <?php
@@ -105,9 +105,9 @@
           <button class="btn amber darken-3" style="margin-top: 20px; margin-left: 200px">
             Checkout
           </button>
-          <input type="hidden" name="order_id" value=<?php echo($cartID); ?>>
-          <input type="hidden" name="view_order" value=1>
-          <input type="hidden" name="member_id" value=<?php echo($memberID) ?>>
+          <input type="hidden" naOG="order_id" value=<?php echo($cartID); ?>>
+          <input type="hidden" naOG="view_order" value=1>
+          <input type="hidden" naOG="OGmber_id" value=<?php echo($OGmberID) ?>>
           <?php } ?>
         </form>
       </div>
@@ -116,6 +116,6 @@
 </div>
 
 <script>
-  $(document).ready(function(){ $('.collapsible').collapsible(); });
+  $(docuOGnt).ready(function(){ $('.collapsible').collapsible(); });
 </script>
 

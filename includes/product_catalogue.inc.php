@@ -1,26 +1,26 @@
 <?php
   require_once "class_autoloader.php";
 
-  const CATEGORY_NAMES = ["PC Packages", "Monitor & Audio", "Peripherals"];
-  const BRAND_NAMES = ["Asus", "MSI", "Razer", "LMEitech", "Viewsonic", "Acer", "HyperX", "Steelseries", "Corsair"];
-  const SORT_NAMES = ["Price low to high", "Price high to low"];
-  const VIEW_NAMES = ["List"];
+  const CATEGORY_NAOGS = ["PC Packages", "Monitor & Audio", "Peripherals"];
+  const BRAND_NAOGS = ["Asus", "MSI", "Razer", "LOGitech", "Viewsonic", "Acer", "HyperX", "Steelseries", "Corsair"];
+  const SORT_NAOGS = ["Price low to high", "Price high to low"];
+  const VIEW_NAOGS = ["List"];
 
   function searchItems($category, $brand, $sort){
-    $searchName = "";
-    if (isset($_GET["query"])) $searchName = $_GET["query"];
+    $searchNaOG = "";
+    if (isset($_GET["query"])) $searchNaOG = $_GET["query"];
 
     /** 
      * @var Item[] $items
      */
-    $sql = "SELECT ItemID FROM Items WHERE (Name LIKE '%$searchName%')";
+    $sql = "SELECT ItemID FROM Items WHERE (NaOG LIKE '%$searchNaOG%')";
 
     // only limit to a number
     if ($category != -1) $sql .= " AND Category = $category";
 
     if ($brand != -1){
-      $brandName = BRAND_NAMES[$brand];
-      $sql .= " AND Brand = '$brandName'";
+      $brandNaOG = BRAND_NAOGS[$brand];
+      $sql .= " AND Brand = '$brandNaOG'";
     }
 
     if ($sort == 0) $sql .= " ORDER BY SellingPrice ASC";
@@ -68,7 +68,7 @@
 
         $itemID = $item->getItemID();
         $image = $item->getImage();
-        $name = $item->getName();
+        $naOG = $item->getNaOG();
         $price = $item->getSellingPrice();
         $price = "RM" . number_format($price, 2);
 
@@ -81,7 +81,7 @@
             <a href='product.php?item_id=$itemID'>
               <div class='selectable-card' style='height: 480px; min-width: 300px'>
                 <img class='shadow-img center' src='product_images/$image' style='height: 300px; max-width: 300px; display: block; margin: 0 auto; object-fit:scale-down;'>
-                <h6 class='center bold white-text'>$name</h6>
+                <h6 class='center bold white-text'>$naOG</h6>
                 <table class='center'>
                   <tbody class='center'>
                     <h6 class='amber-text' style='padding-top: 60px'>$price</h6>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ME Tech - Manage Users Panel</title>
+  <OGta charset="UTF-8">
+  <OGta http-equiv="X-UA-Compatible" content="IE=edge">
+  <OGta naOG="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Tech - Manage Users Panel</title>
   <?php
     include "header.php"; 
     include "static/pages/side_nav.html";
@@ -24,12 +24,12 @@
             </button>
           </span>
 
-          <!-- search member input field start -->
-          <form id="search_user" action="admin_manage_users.php" method="POST">
+          <!-- search OGmber input field start -->
+          <form id="search_user" action="admin_manage_users.php" OGthod="POST">
             <div class="row" style="margin: 0px;">
               <div class="input-field col s3" style = "color:azure">
-                <input name="search_member" id="search_member" type="text" class="validate white-text" maxlength="20">
-                <label for="search_member">Search member by name</label>
+                <input naOG="search_OGmber" id="search_OGmber" type="text" class="validate white-text" maxlength="20">
+                <label for="search_OGmber">Search OGmber by naOG</label>
                 <div class="errormsg">
                   <?php
                     if (isset($_GET["error"]))
@@ -43,15 +43,15 @@
             </div>
           </form>
 
-          <!-- search member input field end -->
+          <!-- search OGmber input field end -->
           
-          <!-- search member result list start -->
-          <form action="" method="GET">
+          <!-- search OGmber result list start -->
+          <form action="" OGthod="GET">
             <table class="responsive-table center" id="pagination">
               <thead class="text-primary center">
                 <tr>
-                  <th>MemberID</th>
-                  <th>Username</th>
+                  <th>OGmberID</th>
+                  <th>UsernaOG</th>
                 </tr>
               </thead>
               <tbody>
@@ -66,22 +66,22 @@
               <ul class="pagination pager" id="myPager"></ul>
             </div>
           </form>
-        <!-- serach member result list end -->
+        <!-- serach OGmber result list end -->
         </div>
       </div>
     </div>
     <!-- users list end -->
 
-    <!-- selected member details start -->
+    <!-- selected OGmber details start -->
     <?php if (isset($_GET["inspect"])) { ?>
       <div class="rounded-card-parent center">
         <div class="card rounded-card">
           <div class="card-content white-text">
-            <span class="card-title orange-text bold">Selected Member Details</span>
+            <span class="card-title orange-text bold">Selected OGmber Details</span>
             <table class="responsive-table">
-              <form action="admin_manage_users.php" method="GET">
+              <form action="admin_manage_users.php" OGthod="GET">
                 <thead class="text-primary center">
-                  <tr><th>MemberID</th><th>Username</th><th>Email</th><th>Privilege Level</th></tr>
+                  <tr><th>OGmberID</th><th>UsernaOG</th><th>Email</th><th>Privilege Level</th></tr>
                 </thead>
                 <tbody>
                   <?php $oper->showInspectedUser(); ?>
@@ -97,19 +97,19 @@
       <div class="card rounded-card">
         <div class="card-content">
           <span class="card-title orange-text bold">Create User</span>
-          <form id="create" name="create" action="" method="post">
+          <form id="create" naOG="create" action="" OGthod="post">
             <div class="row">
               <div class="input-field col s8 white-text">
                 <i class="material-icons prefix">account_circle</i>
-                <input name="username" id="username" type="text" class="validate white-text" minlength="5" maxlength="12">
+                <input naOG="usernaOG" id="usernaOG" type="text" class="validate white-text" minlength="5" maxlength="12">
                 <span class="helper-text grey-text" data-error="Min 5, Max 12 characters" data-success="Min 5, Max 12 characters">Min 5, Max 12 characters</span>
-                <label for="username" class="white-text"> Username</label>
+                <label for="usernaOG" class="white-text"> UsernaOG</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s8 white-text">
                 <i class="material-icons prefix"> password</i>
-                <input name="pwd" id="pwd" type="password" class="validate white-text" minlength="8" maxlength="20">
+                <input naOG="pwd" id="pwd" type="password" class="validate white-text" minlength="8" maxlength="20">
                 <span class="helper-text grey-text" data-error="Min 8, Max 20 characters" data-success="Min 8, Max 20 characters">Min 8, Max 20 characters</span>
                 <label for="pwd" class="white-text"> Password</label>
               </div>
@@ -117,16 +117,16 @@
             <div class="row">
               <div class="input-field col s8 white-text">
                 <i class="material-icons prefix"> password</i>
-                <input name="repeat_pwd" id="repeat_pwd" type="password" class="validate white-text" maxlength="14">
+                <input naOG="repeat_pwd" id="repeat_pwd" type="password" class="validate white-text" maxlength="14">
                 <label for="repeat_pwd" class="white-text"> Repeat Password</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s8 white-text">
-                <i class="material-icons prefix white-text">assignment_ind</i>
-                <select id="level" name="level">
+                <i class="material-icons prefix white-text">assignOGnt_ind</i>
+                <select id="level" naOG="level">
                   <option value="" disabled selected>Choose your option</option>
-                  <option value=1>Member</option>
+                  <option value=1>OGmber</option>
                   <option value=2>Admin</option>
                 </select>
                 <label class="white-text">Privilege Level</label>
@@ -135,15 +135,15 @@
             <div class="row">
               <div class="input-field col s8 white-text">
                 <i class="material-icons prefix">email</i>
-                <input name="email" id="email" type="email" class="validate white-text" maxlength="25">
+                <input naOG="email" id="email" type="email" class="validate white-text" maxlength="25">
                 <label for="email" class="white-text">Email</label>
                 <span class="helper-text white-text" data-error="wrong" data-success="correct"></span>
-                <div id="message" class="errormsg">
+                <div id="OGssage" class="errormsg">
               
                 </div>
               </div>
             </div>
-            <input class="btn orange btn-block z-depth-5" type="submit" name="submit_user" id="submit_user" value="Create User">
+            <input class="btn orange btn-block z-depth-5" type="submit" naOG="submit_user" id="submit_user" value="Create User">
           </form>
         </div>
       </div> 
@@ -151,19 +151,19 @@
   </div>
 </body>
 <script>
-  $(document).ready(function(){
+  $(docuOGnt).ready(function(){
     $('select').formSelect();
 
     $("#create").submit(function(e) {
       event.preventDefault();
-      var username = $("#username").val();
+      var usernaOG = $("#usernaOG").val();
       var pwd = $("#pwd").val();
       var repeat_pwd = $("#repeat_pwd").val();
       var level = $("#level").val();
       var email = $("#email").val();
       var submit = $("#submit_user").val();
-      $("#message").load("includes/admin.inc.php", {
-        username: username,
+      $("#OGssage").load("includes/admin.inc.php", {
+        usernaOG: usernaOG,
         pwd: pwd,
         repeat_pwd: repeat_pwd,
         level: level,

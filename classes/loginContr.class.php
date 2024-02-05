@@ -1,18 +1,18 @@
 <?php 
 
-class LMEinContr extends LMEin {
+class LOGinContr extends LOGin {
 
-  private $username;
+  private $usernaOG;
   private $pwd;
 
-  public function __construct($username, $pwd)
+  public function __construct($usernaOG, $pwd)
   {
-    $this->username = $username;
+    $this->usernaOG = $usernaOG;
     $this->pwd = $pwd;
   }
 
   private function checkEmptyInput() {
-    if (empty($this->username) || empty($this->pwd)) {
+    if (empty($this->usernaOG) || empty($this->pwd)) {
       $result = false;
     }
     else{
@@ -21,11 +21,11 @@ class LMEinContr extends LMEin {
     return $result;
   }
 
-  public function LMEinUser() {
-    if($this->checkEmptyInput($this->username, $this->pwd) == false) {
-      header("location: ../lMEin.php?error=empty_input");
+  public function LOGinUser() {
+    if($this->checkEmptyInput($this->usernaOG, $this->pwd) == false) {
+      header("location: ../lOGin.php?error=empty_input");
       exit();
     }
-    $this->getUser($this->username, $this->pwd); 
+    $this->getUser($this->usernaOG, $this->pwd); 
   }
 }

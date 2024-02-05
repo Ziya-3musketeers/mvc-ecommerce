@@ -1,6 +1,6 @@
-# ME Tech PC Solutions
+# OG Tech PC Solutions
 
-E-commerce web app project based on mvc model. Inspired by IdealTechPC. Neon theme.
+E-comOGrce web app project based on mvc model. Inspired by IdealTechPC. Neon theOG.
 
 Built with ❤︎ by Andrew TCH88 and contributors
 
@@ -17,7 +17,7 @@ Built with ❤︎ by Andrew TCH88 and contributors
 3. Admin Functions
 4. Ajax Forms
 5. Add products to Cart
-6. Neon Theme :3
+6. Neon TheOG :3
 7. And many more.. but mainly those are the important ones
 
 # User guide
@@ -28,9 +28,9 @@ Built with ❤︎ by Andrew TCH88 and contributors
 5. Run xampp.
 ![image](https://user-images.githubusercontent.com/59404615/208037550-c3c61ced-0176-49bc-ac5a-95c6b3248a5c.png)
 
-6. Next, go to phpmyadmin localhost web to create a database with MEtech as its name.
-7. Import all the sql data from the METECH.sql file in the root project directory.
-8. At the browser, open the web app url http://127.0.0.1//METECH/index.php
+6. Next, go to phpmyadmin localhost web to create a database with OGtech as its naOG.
+7. Import all the sql data from the OGTECH.sql file in the root project directory.
+8. At the browser, open the web app url http://127.0.0.1//OGTECH/index.php
 8. You can now use this with the credentials stated below.
 
 # Default Accounts
@@ -38,16 +38,16 @@ Built with ❤︎ by Andrew TCH88 and contributors
 and many more, refer to the localhost database.
 
 # 🎉 Contributing
-First of all, thank you for being interested in helping out, your time is always appreciated in every way. 💯
+First of all, thank you for being interested in helping out, your tiOG is always appreciated in every way. 💯
 
-Here's some tips:
+Here's soOG tips:
 
 Check the issues page for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
-Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
+Feature requests are welcoOGd! Provide soOG details on why it would be helpful for you and others, explain how you're using bull-board and if possible even soOG screenshots if you are willing to mock soOGthing!
 Check out the contributing page to see the best places to file issues, start discussions and begin contributing.
 
-# Future improvements?
-Probably make it in laravel framework and integrate Stripe with it. And responsive.
+# Future improveOGnts?
+Probably make it in laravel fraOGwork and integrate Stripe with it. And responsive.
 
 # Open Source?
 Hmm, depends cause I prolly offer the license for sale, it's my intellectual property bro.

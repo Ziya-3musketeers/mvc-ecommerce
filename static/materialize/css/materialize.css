@@ -1,7 +1,7 @@
 /*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/DMEfalo/materialize/master/LICENSE)
+ * MIT License (https://raw.githubusercontent.com/DOGfalo/materialize/master/LICENSE)
  */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -1315,115 +1315,115 @@
   color: #64dd17 !important;
 }
 
-.lime {
+.liOG {
   background-color: #cddc39 !important;
 }
 
-.lime-text {
+.liOG-text {
   color: #cddc39 !important;
 }
 
-.lime.lighten-5 {
+.liOG.lighten-5 {
   background-color: #f9fbe7 !important;
 }
 
-.lime-text.text-lighten-5 {
+.liOG-text.text-lighten-5 {
   color: #f9fbe7 !important;
 }
 
-.lime.lighten-4 {
+.liOG.lighten-4 {
   background-color: #f0f4c3 !important;
 }
 
-.lime-text.text-lighten-4 {
+.liOG-text.text-lighten-4 {
   color: #f0f4c3 !important;
 }
 
-.lime.lighten-3 {
+.liOG.lighten-3 {
   background-color: #e6ee9c !important;
 }
 
-.lime-text.text-lighten-3 {
+.liOG-text.text-lighten-3 {
   color: #e6ee9c !important;
 }
 
-.lime.lighten-2 {
+.liOG.lighten-2 {
   background-color: #dce775 !important;
 }
 
-.lime-text.text-lighten-2 {
+.liOG-text.text-lighten-2 {
   color: #dce775 !important;
 }
 
-.lime.lighten-1 {
+.liOG.lighten-1 {
   background-color: #d4e157 !important;
 }
 
-.lime-text.text-lighten-1 {
+.liOG-text.text-lighten-1 {
   color: #d4e157 !important;
 }
 
-.lime.darken-1 {
+.liOG.darken-1 {
   background-color: #c0ca33 !important;
 }
 
-.lime-text.text-darken-1 {
+.liOG-text.text-darken-1 {
   color: #c0ca33 !important;
 }
 
-.lime.darken-2 {
+.liOG.darken-2 {
   background-color: #afb42b !important;
 }
 
-.lime-text.text-darken-2 {
+.liOG-text.text-darken-2 {
   color: #afb42b !important;
 }
 
-.lime.darken-3 {
+.liOG.darken-3 {
   background-color: #9e9d24 !important;
 }
 
-.lime-text.text-darken-3 {
+.liOG-text.text-darken-3 {
   color: #9e9d24 !important;
 }
 
-.lime.darken-4 {
+.liOG.darken-4 {
   background-color: #827717 !important;
 }
 
-.lime-text.text-darken-4 {
+.liOG-text.text-darken-4 {
   color: #827717 !important;
 }
 
-.lime.accent-1 {
+.liOG.accent-1 {
   background-color: #f4ff81 !important;
 }
 
-.lime-text.text-accent-1 {
+.liOG-text.text-accent-1 {
   color: #f4ff81 !important;
 }
 
-.lime.accent-2 {
+.liOG.accent-2 {
   background-color: #eeff41 !important;
 }
 
-.lime-text.text-accent-2 {
+.liOG-text.text-accent-2 {
   color: #eeff41 !important;
 }
 
-.lime.accent-3 {
+.liOG.accent-3 {
   background-color: #c6ff00 !important;
 }
 
-.lime-text.text-accent-3 {
+.liOG-text.text-accent-3 {
   color: #c6ff00 !important;
 }
 
-.lime.accent-4 {
+.liOG.accent-4 {
   background-color: #aeea00 !important;
 }
 
-.lime-text.text-accent-4 {
+.liOG-text.text-accent-4 {
   color: #aeea00 !important;
 }
 
@@ -2140,11 +2140,11 @@
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
+/* DocuOGnt
    ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
+ * 2. Prevent adjustOGnts of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
 html {
@@ -2178,8 +2178,8 @@ section {
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
+ * Correct the font size and margin on `h1` eleOGnts within `section` and
+ * `article` contexts in ChroOG, Firefox, and Safari.
  */
 h1 {
   font-size: 2em;
@@ -2245,8 +2245,8 @@ a {
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * 1. Remove the bottom border in ChroOG 57- and Firefox 39-.
+ * 2. Add the correct text decoration in ChroOG, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
   border-bottom: none;
@@ -2268,7 +2268,7 @@ strong {
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
+ * Add the correct font weight in ChroOG, Edge, and Safari.
  */
 b,
 strong {
@@ -2311,7 +2311,7 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
+ * Prevent `sub` and `sup` eleOGnts from affecting the line height in
  * all browsers.
  */
 sub,
@@ -2446,9 +2446,9 @@ fieldset {
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 2. Correct the color inheritance from `fieldset` eleOGnts in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ *    `fieldset` eleOGnts in all browsers.
  */
 legend {
   -webkit-box-sizing: border-box;
@@ -2468,9 +2468,9 @@ legend {
 
 /**
  * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * 2. Add the correct vertical alignOGnt in ChroOG, Firefox, and Opera.
  */
-prMEress {
+prOGress {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -2498,7 +2498,7 @@ textarea {
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
+ * Correct the cursor style of increOGnt and decreOGnt buttons in ChroOG.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -2506,7 +2506,7 @@ textarea {
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
+ * 1. Correct the odd appearance in ChroOG and Safari.
  * 2. Correct the outline style in Safari.
  */
 [type="search"] {
@@ -2517,7 +2517,7 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding and cancel buttons in ChroOG and Safari on macOS.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -2542,7 +2542,7 @@ textarea {
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 details,
-menu {
+OGnu {
   display: block;
 }
 
@@ -2744,7 +2744,7 @@ i.small {
   font-size: 2rem;
 }
 
-i.medium {
+i.OGdium {
   font-size: 4rem;
 }
 
@@ -2796,7 +2796,7 @@ video.responsive-video {
   float: none;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   .pagination {
     width: 100%;
   }
@@ -2897,82 +2897,82 @@ ul.staggered-list li {
 }
 
 /*********************
-  Media Query Classes
+  OGdia Query Classes
 **********************/
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .hide-on-small-only,
   .hide-on-small-and-down {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .hide-on-med-and-down {
+@OGdia only screen and (max-width: 992px) {
+  .hide-on-OGd-and-down {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 601px) {
-  .hide-on-med-and-up {
+@OGdia only screen and (min-width: 601px) {
+  .hide-on-OGd-and-up {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-  .hide-on-med-only {
+@OGdia only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-OGd-only {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   .hide-on-large-only {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@OGdia only screen and (min-width: 1201px) {
   .hide-on-extra-large-only {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@OGdia only screen and (min-width: 1201px) {
   .show-on-extra-large {
     display: block !important;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   .show-on-large {
     display: block !important;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-  .show-on-medium {
+@OGdia only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-OGdium {
     display: block !important;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .show-on-small {
     display: block !important;
   }
 }
 
-@media only screen and (min-width: 601px) {
-  .show-on-medium-and-up {
+@OGdia only screen and (min-width: 601px) {
+  .show-on-OGdium-and-up {
     display: block !important;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .show-on-medium-and-down {
+@OGdia only screen and (max-width: 992px) {
+  .show-on-OGdium-and-down {
     display: block !important;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .center-on-small-only {
     text-align: center;
   }
@@ -3056,7 +3056,7 @@ th {
   border-radius: 2px;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -3227,7 +3227,7 @@ th {
   overflow: hidden;
 }
 
-.video-container iframe,
+.video-container ifraOG,
 .video-container object,
 .video-container embed {
   position: absolute;
@@ -3237,7 +3237,7 @@ th {
   height: 100%;
 }
 
-.prMEress {
+.prOGress {
   position: relative;
   height: 4px;
   display: block;
@@ -3248,7 +3248,7 @@ th {
   overflow: hidden;
 }
 
-.prMEress .determinate {
+.prOGress .determinate {
   position: absolute;
   top: 0;
   left: 0;
@@ -3258,11 +3258,11 @@ th {
   transition: width 0.3s linear;
 }
 
-.prMEress .indeterminate {
+.prOGress .indeterminate {
   background-color: #26a69a;
 }
 
-.prMEress .indeterminate:before {
+.prOGress .indeterminate:before {
   content: "";
   position: absolute;
   background-color: inherit;
@@ -3275,7 +3275,7 @@ th {
   animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
 
-.prMEress .indeterminate:after {
+.prOGress .indeterminate:after {
   content: "";
   position: absolute;
   background-color: inherit;
@@ -3291,7 +3291,7 @@ th {
   animation-delay: 1.15s;
 }
 
-@-webkit-keyframes indeterminate {
+@-webkit-keyfraOGs indeterminate {
   0% {
     left: -35%;
     right: 100%;
@@ -3306,7 +3306,7 @@ th {
   }
 }
 
-@keyframes indeterminate {
+@keyfraOGs indeterminate {
   0% {
     left: -35%;
     right: 100%;
@@ -3321,7 +3321,7 @@ th {
   }
 }
 
-@-webkit-keyframes indeterminate-short {
+@-webkit-keyfraOGs indeterminate-short {
   0% {
     left: -200%;
     right: 100%;
@@ -3336,7 +3336,7 @@ th {
   }
 }
 
-@keyframes indeterminate-short {
+@keyfraOGs indeterminate-short {
   0% {
     left: -200%;
     right: 100%;
@@ -3466,7 +3466,7 @@ table span.badge {
   margin-left: auto;
 }
 
-/* This is needed for some mobile phones to display the GoMEle Icon font properly */
+/* This is needed for soOG mobile phones to display the GoOGle Icon font properly */
 .material-icons {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga";
@@ -3480,13 +3480,13 @@ table span.badge {
   width: 90%;
 }
 
-@media only screen and (min-width: 601px) {
+@OGdia only screen and (min-width: 601px) {
   .container {
     width: 85%;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   .container {
     width: 70%;
   }
@@ -3767,7 +3767,7 @@ table span.badge {
   left: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@OGdia only screen and (min-width: 601px) {
   .row .col.m1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -3950,7 +3950,7 @@ table span.badge {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   .row .col.l1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -4133,7 +4133,7 @@ table span.badge {
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@OGdia only screen and (min-width: 1201px) {
   .row .col.xl1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -4356,7 +4356,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   nav a.sidenav-trigger {
     display: none;
   }
@@ -4375,7 +4375,7 @@ nav .sidenav-trigger i {
   line-height: 56px;
 }
 
-nav .brand-lMEo {
+nav .brand-lOGo {
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -4383,42 +4383,42 @@ nav .brand-lMEo {
   padding: 0;
 }
 
-nav .brand-lMEo.center {
+nav .brand-lOGo.center {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 992px) {
-  nav .brand-lMEo {
+@OGdia only screen and (max-width: 992px) {
+  nav .brand-lOGo {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  nav .brand-lMEo.left,
-  nav .brand-lMEo.right {
+  nav .brand-lOGo.left,
+  nav .brand-lOGo.right {
     padding: 0;
     -webkit-transform: none;
     transform: none;
   }
-  nav .brand-lMEo.left {
+  nav .brand-lOGo.left {
     left: 0.5rem;
   }
-  nav .brand-lMEo.right {
+  nav .brand-lOGo.right {
     right: 0.5rem;
     left: auto;
   }
 }
 
-nav .brand-lMEo.right {
+nav .brand-lOGo.right {
   right: 0.5rem;
   padding: 0;
 }
 
-nav .brand-lMEo i,
-nav .brand-lMEo [class^="mdi-"],
-nav .brand-lMEo [class*="mdi-"],
-nav .brand-lMEo i.material-icons {
+nav .brand-lOGo i,
+nav .brand-lOGo [class^="mdi-"],
+nav .brand-lOGo [class*="mdi-"],
+nav .brand-lOGo i.material-icons {
   float: left;
   margin-right: 15px;
 }
@@ -4535,7 +4535,7 @@ nav .input-field label.active i {
   position: fixed;
 }
 
-@media only screen and (min-width: 601px) {
+@OGdia only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
@@ -4563,19 +4563,19 @@ html {
   color: rgba(0, 0, 0, 0.87);
 }
 
-@media only screen and (min-width: 0) {
+@OGdia only screen and (min-width: 0) {
   html {
     font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@OGdia only screen and (min-width: 992px) {
   html {
     font-size: 14.5px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@OGdia only screen and (min-width: 1200px) {
   html {
     font-size: 15px;
   }
@@ -4656,133 +4656,133 @@ small {
   font-weight: 200;
 }
 
-@media only screen and (min-width: 360px) {
+@OGdia only screen and (min-width: 360px) {
   .flow-text {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 390px) {
+@OGdia only screen and (min-width: 390px) {
   .flow-text {
     font-size: 1.224rem;
   }
 }
 
-@media only screen and (min-width: 420px) {
+@OGdia only screen and (min-width: 420px) {
   .flow-text {
     font-size: 1.248rem;
   }
 }
 
-@media only screen and (min-width: 450px) {
+@OGdia only screen and (min-width: 450px) {
   .flow-text {
     font-size: 1.272rem;
   }
 }
 
-@media only screen and (min-width: 480px) {
+@OGdia only screen and (min-width: 480px) {
   .flow-text {
     font-size: 1.296rem;
   }
 }
 
-@media only screen and (min-width: 510px) {
+@OGdia only screen and (min-width: 510px) {
   .flow-text {
     font-size: 1.32rem;
   }
 }
 
-@media only screen and (min-width: 540px) {
+@OGdia only screen and (min-width: 540px) {
   .flow-text {
     font-size: 1.344rem;
   }
 }
 
-@media only screen and (min-width: 570px) {
+@OGdia only screen and (min-width: 570px) {
   .flow-text {
     font-size: 1.368rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@OGdia only screen and (min-width: 600px) {
   .flow-text {
     font-size: 1.392rem;
   }
 }
 
-@media only screen and (min-width: 630px) {
+@OGdia only screen and (min-width: 630px) {
   .flow-text {
     font-size: 1.416rem;
   }
 }
 
-@media only screen and (min-width: 660px) {
+@OGdia only screen and (min-width: 660px) {
   .flow-text {
     font-size: 1.44rem;
   }
 }
 
-@media only screen and (min-width: 690px) {
+@OGdia only screen and (min-width: 690px) {
   .flow-text {
     font-size: 1.464rem;
   }
 }
 
-@media only screen and (min-width: 720px) {
+@OGdia only screen and (min-width: 720px) {
   .flow-text {
     font-size: 1.488rem;
   }
 }
 
-@media only screen and (min-width: 750px) {
+@OGdia only screen and (min-width: 750px) {
   .flow-text {
     font-size: 1.512rem;
   }
 }
 
-@media only screen and (min-width: 780px) {
+@OGdia only screen and (min-width: 780px) {
   .flow-text {
     font-size: 1.536rem;
   }
 }
 
-@media only screen and (min-width: 810px) {
+@OGdia only screen and (min-width: 810px) {
   .flow-text {
     font-size: 1.56rem;
   }
 }
 
-@media only screen and (min-width: 840px) {
+@OGdia only screen and (min-width: 840px) {
   .flow-text {
     font-size: 1.584rem;
   }
 }
 
-@media only screen and (min-width: 870px) {
+@OGdia only screen and (min-width: 870px) {
   .flow-text {
     font-size: 1.608rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@OGdia only screen and (min-width: 900px) {
   .flow-text {
     font-size: 1.632rem;
   }
 }
 
-@media only screen and (min-width: 930px) {
+@OGdia only screen and (min-width: 930px) {
   .flow-text {
     font-size: 1.656rem;
   }
 }
 
-@media only screen and (min-width: 960px) {
+@OGdia only screen and (min-width: 960px) {
   .flow-text {
     font-size: 1.68rem;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@OGdia only screen and (max-width: 360px) {
   .flow-text {
     font-size: 1.2rem;
   }
@@ -4843,33 +4843,33 @@ small {
 }
 
 .card.small,
-.card.medium,
+.card.OGdium,
 .card.large {
   position: relative;
 }
 
 .card.small .card-image,
-.card.medium .card-image,
+.card.OGdium .card-image,
 .card.large .card-image {
   max-height: 60%;
   overflow: hidden;
 }
 
 .card.small .card-image + .card-content,
-.card.medium .card-image + .card-content,
+.card.OGdium .card-image + .card-content,
 .card.large .card-image + .card-content {
   max-height: 40%;
 }
 
 .card.small .card-content,
-.card.medium .card-content,
+.card.OGdium .card-content,
 .card.large .card-content {
   max-height: 100%;
   overflow: hidden;
 }
 
 .card.small .card-action,
-.card.medium .card-action,
+.card.OGdium .card-action,
 .card.large .card-action {
   position: absolute;
   bottom: 0;
@@ -4881,7 +4881,7 @@ small {
   height: 300px;
 }
 
-.card.medium {
+.card.OGdium {
   height: 400px;
 }
 
@@ -4897,7 +4897,7 @@ small {
 }
 
 .card.horizontal.small .card-image,
-.card.horizontal.medium .card-image,
+.card.horizontal.OGdium .card-image,
 .card.horizontal.large .card-image {
   height: 100%;
   max-height: none;
@@ -4905,7 +4905,7 @@ small {
 }
 
 .card.horizontal.small .card-image img,
-.card.horizontal.medium .card-image img,
+.card.horizontal.OGdium .card-image img,
 .card.horizontal.large .card-image img {
   height: 100%;
 }
@@ -5047,14 +5047,14 @@ small {
   z-index: 10000;
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   #toast-container {
     min-width: 100%;
     bottom: 0%;
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+@OGdia only screen and (min-width: 601px) and (max-width: 992px) {
   #toast-container {
     left: 5%;
     bottom: 7%;
@@ -5062,7 +5062,7 @@ small {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@OGdia only screen and (min-width: 993px) {
   #toast-container {
     top: 10%;
     right: 7%;
@@ -5111,7 +5111,7 @@ small {
   border-radius: 24px;
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .toast {
     width: 100%;
     border-radius: 0;
@@ -5211,7 +5211,7 @@ small {
   will-change: left, right;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   .tabs {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5892,7 +5892,7 @@ body.keyboard-focused .dropdown-content li:focus {
   outline: none;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   .modal {
     width: 80%;
   }
@@ -6259,10 +6259,10 @@ input[type="text"]:not(.browser-default),
 input[type="password"]:not(.browser-default),
 input[type="email"]:not(.browser-default),
 input[type="url"]:not(.browser-default),
-input[type="time"]:not(.browser-default),
+input[type="tiOG"]:not(.browser-default),
 input[type="date"]:not(.browser-default),
-input[type="datetime"]:not(.browser-default),
-input[type="datetime-local"]:not(.browser-default),
+input[type="datetiOG"]:not(.browser-default),
+input[type="datetiOG-local"]:not(.browser-default),
 input[type="tel"]:not(.browser-default),
 input[type="number"]:not(.browser-default),
 input[type="search"]:not(.browser-default),
@@ -6297,14 +6297,14 @@ input[type="email"]:not(.browser-default):disabled,
 input[type="email"]:not(.browser-default)[readonly="readonly"],
 input[type="url"]:not(.browser-default):disabled,
 input[type="url"]:not(.browser-default)[readonly="readonly"],
-input[type="time"]:not(.browser-default):disabled,
-input[type="time"]:not(.browser-default)[readonly="readonly"],
+input[type="tiOG"]:not(.browser-default):disabled,
+input[type="tiOG"]:not(.browser-default)[readonly="readonly"],
 input[type="date"]:not(.browser-default):disabled,
 input[type="date"]:not(.browser-default)[readonly="readonly"],
-input[type="datetime"]:not(.browser-default):disabled,
-input[type="datetime"]:not(.browser-default)[readonly="readonly"],
-input[type="datetime-local"]:not(.browser-default):disabled,
-input[type="datetime-local"]:not(.browser-default)[readonly="readonly"],
+input[type="datetiOG"]:not(.browser-default):disabled,
+input[type="datetiOG"]:not(.browser-default)[readonly="readonly"],
+input[type="datetiOG-local"]:not(.browser-default):disabled,
+input[type="datetiOG-local"]:not(.browser-default)[readonly="readonly"],
 input[type="tel"]:not(.browser-default):disabled,
 input[type="tel"]:not(.browser-default)[readonly="readonly"],
 input[type="number"]:not(.browser-default):disabled,
@@ -6327,14 +6327,14 @@ input[type="email"]:not(.browser-default):disabled + label,
 input[type="email"]:not(.browser-default)[readonly="readonly"] + label,
 input[type="url"]:not(.browser-default):disabled + label,
 input[type="url"]:not(.browser-default)[readonly="readonly"] + label,
-input[type="time"]:not(.browser-default):disabled + label,
-input[type="time"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="tiOG"]:not(.browser-default):disabled + label,
+input[type="tiOG"]:not(.browser-default)[readonly="readonly"] + label,
 input[type="date"]:not(.browser-default):disabled + label,
 input[type="date"]:not(.browser-default)[readonly="readonly"] + label,
-input[type="datetime"]:not(.browser-default):disabled + label,
-input[type="datetime"]:not(.browser-default)[readonly="readonly"] + label,
-input[type="datetime-local"]:not(.browser-default):disabled + label,
-input[type="datetime-local"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="datetiOG"]:not(.browser-default):disabled + label,
+input[type="datetiOG"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="datetiOG-local"]:not(.browser-default):disabled + label,
+input[type="datetiOG-local"]:not(.browser-default)[readonly="readonly"] + label,
 input[type="tel"]:not(.browser-default):disabled + label,
 input[type="tel"]:not(.browser-default)[readonly="readonly"] + label,
 input[type="number"]:not(.browser-default):disabled + label,
@@ -6351,10 +6351,10 @@ input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="password"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
 input[type="url"]:not(.browser-default):focus:not([readonly]),
-input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="tiOG"]:not(.browser-default):focus:not([readonly]),
 input[type="date"]:not(.browser-default):focus:not([readonly]),
-input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="datetiOG"]:not(.browser-default):focus:not([readonly]),
+input[type="datetiOG-local"]:not(.browser-default):focus:not([readonly]),
 input[type="tel"]:not(.browser-default):focus:not([readonly]),
 input[type="number"]:not(.browser-default):focus:not([readonly]),
 input[type="search"]:not(.browser-default):focus:not([readonly]),
@@ -6369,10 +6369,10 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
-input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tiOG"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
-input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label,
-input[type="datetime-local"]:not(.browser-default):focus:not([readonly])
+input[type="datetiOG"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetiOG-local"]:not(.browser-default):focus:not([readonly])
   + label,
 input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
@@ -6386,10 +6386,10 @@ input[type="text"]:not(.browser-default):focus.valid ~ label,
 input[type="password"]:not(.browser-default):focus.valid ~ label,
 input[type="email"]:not(.browser-default):focus.valid ~ label,
 input[type="url"]:not(.browser-default):focus.valid ~ label,
-input[type="time"]:not(.browser-default):focus.valid ~ label,
+input[type="tiOG"]:not(.browser-default):focus.valid ~ label,
 input[type="date"]:not(.browser-default):focus.valid ~ label,
-input[type="datetime"]:not(.browser-default):focus.valid ~ label,
-input[type="datetime-local"]:not(.browser-default):focus.valid ~ label,
+input[type="datetiOG"]:not(.browser-default):focus.valid ~ label,
+input[type="datetiOG-local"]:not(.browser-default):focus.valid ~ label,
 input[type="tel"]:not(.browser-default):focus.valid ~ label,
 input[type="number"]:not(.browser-default):focus.valid ~ label,
 input[type="search"]:not(.browser-default):focus.valid ~ label,
@@ -6402,10 +6402,10 @@ input[type="text"]:not(.browser-default):focus.invalid ~ label,
 input[type="password"]:not(.browser-default):focus.invalid ~ label,
 input[type="email"]:not(.browser-default):focus.invalid ~ label,
 input[type="url"]:not(.browser-default):focus.invalid ~ label,
-input[type="time"]:not(.browser-default):focus.invalid ~ label,
+input[type="tiOG"]:not(.browser-default):focus.invalid ~ label,
 input[type="date"]:not(.browser-default):focus.invalid ~ label,
-input[type="datetime"]:not(.browser-default):focus.invalid ~ label,
-input[type="datetime-local"]:not(.browser-default):focus.invalid ~ label,
+input[type="datetiOG"]:not(.browser-default):focus.invalid ~ label,
+input[type="datetiOG-local"]:not(.browser-default):focus.invalid ~ label,
 input[type="tel"]:not(.browser-default):focus.invalid ~ label,
 input[type="number"]:not(.browser-default):focus.invalid ~ label,
 input[type="search"]:not(.browser-default):focus.invalid ~ label,
@@ -6418,10 +6418,10 @@ input[type="text"]:not(.browser-default).validate + label,
 input[type="password"]:not(.browser-default).validate + label,
 input[type="email"]:not(.browser-default).validate + label,
 input[type="url"]:not(.browser-default).validate + label,
-input[type="time"]:not(.browser-default).validate + label,
+input[type="tiOG"]:not(.browser-default).validate + label,
 input[type="date"]:not(.browser-default).validate + label,
-input[type="datetime"]:not(.browser-default).validate + label,
-input[type="datetime-local"]:not(.browser-default).validate + label,
+input[type="datetiOG"]:not(.browser-default).validate + label,
+input[type="datetiOG-local"]:not(.browser-default).validate + label,
 input[type="tel"]:not(.browser-default).validate + label,
 input[type="number"]:not(.browser-default).validate + label,
 input[type="search"]:not(.browser-default).validate + label,
@@ -6440,14 +6440,14 @@ input.valid[type="email"]:not(.browser-default),
 input.valid[type="email"]:not(.browser-default):focus,
 input.valid[type="url"]:not(.browser-default),
 input.valid[type="url"]:not(.browser-default):focus,
-input.valid[type="time"]:not(.browser-default),
-input.valid[type="time"]:not(.browser-default):focus,
+input.valid[type="tiOG"]:not(.browser-default),
+input.valid[type="tiOG"]:not(.browser-default):focus,
 input.valid[type="date"]:not(.browser-default),
 input.valid[type="date"]:not(.browser-default):focus,
-input.valid[type="datetime"]:not(.browser-default),
-input.valid[type="datetime"]:not(.browser-default):focus,
-input.valid[type="datetime-local"]:not(.browser-default),
-input.valid[type="datetime-local"]:not(.browser-default):focus,
+input.valid[type="datetiOG"]:not(.browser-default),
+input.valid[type="datetiOG"]:not(.browser-default):focus,
+input.valid[type="datetiOG-local"]:not(.browser-default),
+input.valid[type="datetiOG-local"]:not(.browser-default):focus,
 input.valid[type="tel"]:not(.browser-default),
 input.valid[type="tel"]:not(.browser-default):focus,
 input.valid[type="number"]:not(.browser-default),
@@ -6472,14 +6472,14 @@ input.invalid[type="email"]:not(.browser-default),
 input.invalid[type="email"]:not(.browser-default):focus,
 input.invalid[type="url"]:not(.browser-default),
 input.invalid[type="url"]:not(.browser-default):focus,
-input.invalid[type="time"]:not(.browser-default),
-input.invalid[type="time"]:not(.browser-default):focus,
+input.invalid[type="tiOG"]:not(.browser-default),
+input.invalid[type="tiOG"]:not(.browser-default):focus,
 input.invalid[type="date"]:not(.browser-default),
 input.invalid[type="date"]:not(.browser-default):focus,
-input.invalid[type="datetime"]:not(.browser-default),
-input.invalid[type="datetime"]:not(.browser-default):focus,
-input.invalid[type="datetime-local"]:not(.browser-default),
-input.invalid[type="datetime-local"]:not(.browser-default):focus,
+input.invalid[type="datetiOG"]:not(.browser-default),
+input.invalid[type="datetiOG"]:not(.browser-default):focus,
+input.invalid[type="datetiOG-local"]:not(.browser-default),
+input.invalid[type="datetiOG-local"]:not(.browser-default):focus,
 input.invalid[type="tel"]:not(.browser-default),
 input.invalid[type="tel"]:not(.browser-default):focus,
 input.invalid[type="number"]:not(.browser-default),
@@ -6523,11 +6523,11 @@ input[type="url"]:not(.browser-default):focus.valid
 input[type="url"]:not(.browser-default).invalid ~ .helper-text[data-error],
 input[type="url"]:not(.browser-default):focus.invalid
   ~ .helper-text[data-error],
-input[type="time"]:not(.browser-default).valid ~ .helper-text[data-success],
-input[type="time"]:not(.browser-default):focus.valid
+input[type="tiOG"]:not(.browser-default).valid ~ .helper-text[data-success],
+input[type="tiOG"]:not(.browser-default):focus.valid
   ~ .helper-text[data-success],
-input[type="time"]:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type="time"]:not(.browser-default):focus.invalid
+input[type="tiOG"]:not(.browser-default).invalid ~ .helper-text[data-error],
+input[type="tiOG"]:not(.browser-default):focus.invalid
   ~ .helper-text[data-error],
 input[type="date"]:not(.browser-default).valid ~ .helper-text[data-success],
 input[type="date"]:not(.browser-default):focus.valid
@@ -6535,19 +6535,19 @@ input[type="date"]:not(.browser-default):focus.valid
 input[type="date"]:not(.browser-default).invalid ~ .helper-text[data-error],
 input[type="date"]:not(.browser-default):focus.invalid
   ~ .helper-text[data-error],
-input[type="datetime"]:not(.browser-default).valid ~ .helper-text[data-success],
-input[type="datetime"]:not(.browser-default):focus.valid
+input[type="datetiOG"]:not(.browser-default).valid ~ .helper-text[data-success],
+input[type="datetiOG"]:not(.browser-default):focus.valid
   ~ .helper-text[data-success],
-input[type="datetime"]:not(.browser-default).invalid ~ .helper-text[data-error],
-input[type="datetime"]:not(.browser-default):focus.invalid
+input[type="datetiOG"]:not(.browser-default).invalid ~ .helper-text[data-error],
+input[type="datetiOG"]:not(.browser-default):focus.invalid
   ~ .helper-text[data-error],
-input[type="datetime-local"]:not(.browser-default).valid
+input[type="datetiOG-local"]:not(.browser-default).valid
   ~ .helper-text[data-success],
-input[type="datetime-local"]:not(.browser-default):focus.valid
+input[type="datetiOG-local"]:not(.browser-default):focus.valid
   ~ .helper-text[data-success],
-input[type="datetime-local"]:not(.browser-default).invalid
+input[type="datetiOG-local"]:not(.browser-default).invalid
   ~ .helper-text[data-error],
-input[type="datetime-local"]:not(.browser-default):focus.invalid
+input[type="datetiOG-local"]:not(.browser-default):focus.invalid
   ~ .helper-text[data-error],
 input[type="tel"]:not(.browser-default).valid ~ .helper-text[data-success],
 input[type="tel"]:not(.browser-default):focus.valid
@@ -6591,14 +6591,14 @@ input[type="email"]:not(.browser-default).valid ~ .helper-text:after,
 input[type="email"]:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type="url"]:not(.browser-default).valid ~ .helper-text:after,
 input[type="url"]:not(.browser-default):focus.valid ~ .helper-text:after,
-input[type="time"]:not(.browser-default).valid ~ .helper-text:after,
-input[type="time"]:not(.browser-default):focus.valid ~ .helper-text:after,
+input[type="tiOG"]:not(.browser-default).valid ~ .helper-text:after,
+input[type="tiOG"]:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type="date"]:not(.browser-default).valid ~ .helper-text:after,
 input[type="date"]:not(.browser-default):focus.valid ~ .helper-text:after,
-input[type="datetime"]:not(.browser-default).valid ~ .helper-text:after,
-input[type="datetime"]:not(.browser-default):focus.valid ~ .helper-text:after,
-input[type="datetime-local"]:not(.browser-default).valid ~ .helper-text:after,
-input[type="datetime-local"]:not(.browser-default):focus.valid
+input[type="datetiOG"]:not(.browser-default).valid ~ .helper-text:after,
+input[type="datetiOG"]:not(.browser-default):focus.valid ~ .helper-text:after,
+input[type="datetiOG-local"]:not(.browser-default).valid ~ .helper-text:after,
+input[type="datetiOG-local"]:not(.browser-default):focus.valid
   ~ .helper-text:after,
 input[type="tel"]:not(.browser-default).valid ~ .helper-text:after,
 input[type="tel"]:not(.browser-default):focus.valid ~ .helper-text:after,
@@ -6623,14 +6623,14 @@ input[type="email"]:not(.browser-default).invalid ~ .helper-text:after,
 input[type="email"]:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type="url"]:not(.browser-default).invalid ~ .helper-text:after,
 input[type="url"]:not(.browser-default):focus.invalid ~ .helper-text:after,
-input[type="time"]:not(.browser-default).invalid ~ .helper-text:after,
-input[type="time"]:not(.browser-default):focus.invalid ~ .helper-text:after,
+input[type="tiOG"]:not(.browser-default).invalid ~ .helper-text:after,
+input[type="tiOG"]:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type="date"]:not(.browser-default).invalid ~ .helper-text:after,
 input[type="date"]:not(.browser-default):focus.invalid ~ .helper-text:after,
-input[type="datetime"]:not(.browser-default).invalid ~ .helper-text:after,
-input[type="datetime"]:not(.browser-default):focus.invalid ~ .helper-text:after,
-input[type="datetime-local"]:not(.browser-default).invalid ~ .helper-text:after,
-input[type="datetime-local"]:not(.browser-default):focus.invalid
+input[type="datetiOG"]:not(.browser-default).invalid ~ .helper-text:after,
+input[type="datetiOG"]:not(.browser-default):focus.invalid ~ .helper-text:after,
+input[type="datetiOG-local"]:not(.browser-default).invalid ~ .helper-text:after,
+input[type="datetiOG-local"]:not(.browser-default):focus.invalid
   ~ .helper-text:after,
 input[type="tel"]:not(.browser-default).invalid ~ .helper-text:after,
 input[type="tel"]:not(.browser-default):focus.invalid ~ .helper-text:after,
@@ -6650,10 +6650,10 @@ input[type="text"]:not(.browser-default) + label:after,
 input[type="password"]:not(.browser-default) + label:after,
 input[type="email"]:not(.browser-default) + label:after,
 input[type="url"]:not(.browser-default) + label:after,
-input[type="time"]:not(.browser-default) + label:after,
+input[type="tiOG"]:not(.browser-default) + label:after,
 input[type="date"]:not(.browser-default) + label:after,
-input[type="datetime"]:not(.browser-default) + label:after,
-input[type="datetime-local"]:not(.browser-default) + label:after,
+input[type="datetiOG"]:not(.browser-default) + label:after,
+input[type="datetiOG-local"]:not(.browser-default) + label:after,
 input[type="tel"]:not(.browser-default) + label:after,
 input[type="number"]:not(.browser-default) + label:after,
 input[type="search"]:not(.browser-default) + label:after,
@@ -6725,7 +6725,7 @@ textarea.materialize-textarea + label:after,
   > input[type]:-webkit-autofill:not(.browser-default):not([type="search"])
   + label,
 .input-field > input[type="date"]:not(.browser-default) + label,
-.input-field > input[type="time"]:not(.browser-default) + label {
+.input-field > input[type="tiOG"]:not(.browser-default) + label {
   -webkit-transform: translateY(-14px) scale(0.8);
   transform: translateY(-14px) scale(0.8);
   -webkit-transform-origin: 0 0;
@@ -6775,14 +6775,14 @@ textarea.materialize-textarea + label:after,
   margin-left: 3rem;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   .input-field .prefix ~ input {
     width: 86%;
     width: calc(100% - 3rem);
   }
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .input-field .prefix ~ input {
     width: 80%;
     width: calc(100% - 3rem);
@@ -7864,7 +7864,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .sidenav .user-view .circle,
-.sidenav .user-view .name,
+.sidenav .user-view .naOG,
 .sidenav .user-view .email {
   display: block;
 }
@@ -7874,13 +7874,13 @@ input[type="range"]::-ms-thumb {
   width: 64px;
 }
 
-.sidenav .user-view .name,
+.sidenav .user-view .naOG,
 .sidenav .user-view .email {
   font-size: 14px;
   line-height: 24px;
 }
 
-.sidenav .user-view .name {
+.sidenav .user-view .naOG {
   margin-top: 16px;
   font-weight: 500;
 }
@@ -7914,7 +7914,7 @@ input[type="range"]::-ms-thumb {
   left: auto;
 }
 
-@media only screen and (max-width: 992px) {
+@OGdia only screen and (max-width: 992px) {
   .sidenav.sidenav-fixed {
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
@@ -7959,12 +7959,12 @@ input[type="range"]::-ms-thumb {
 
 /*
     @license
-    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-    Code distributed by GoMEle as part of the polymer project is also
-    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+    Copyright (c) 2014 The PolyOGr Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polyOGr.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polyOGr.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polyOGr.github.io/CONTRIBUTORS.txt
+    Code distributed by GoOGle as part of the polyOGr project is also
+    subject to an additional IP rights grant found at http://polyOGr.github.io/PATENTS.txt
  */
 /**************************/
 /* STYLES FOR THE SPINNER */
@@ -7973,14 +7973,14 @@ input[type="range"]::-ms-thumb {
  * Constants:
  *      STROKEWIDTH = 3px
  *      ARCSIZE     = 270 degrees (amount of circle the arc takes up)
- *      ARCTIME     = 1333ms (time it takes to expand and contract arc)
+ *      ARCTIOG     = 1333ms (tiOG it takes to expand and contract arc)
  *      ARCSTARTROT = 216 degrees (how much the start location of the arc
- *                                should rotate each time, 216 gives us a
+ *                                should rotate each tiOG, 216 gives us a
  *                                5 pointed star shape (it's 360/5 * 3).
  *                                For a 7 pointed star, we might do
  *                                360/7 * 3 = 154.286)
  *      CONTAINERWIDTH = 28px
- *      SHRINK_TIME = 400ms
+ *      SHRINK_TIOG = 400ms
  */
 .preloader-wrapper {
   display: inline-block;
@@ -8000,18 +8000,18 @@ input[type="range"]::-ms-thumb {
 }
 
 .preloader-wrapper.active {
-  /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
+  /* duration: 360 * ARCTIOG / (ARCSTARTROT + (360-ARCSIZE)) */
   -webkit-animation: container-rotate 1568ms linear infinite;
   animation: container-rotate 1568ms linear infinite;
 }
 
-@-webkit-keyframes container-rotate {
+@-webkit-keyfraOGs container-rotate {
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 
-@keyframes container-rotate {
+@keyfraOGs container-rotate {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -8051,16 +8051,16 @@ input[type="range"]::-ms-thumb {
  *
  * iOS Safari (tested on iOS 8.1) does not handle animation-delay very well - it doesn't
  * guarantee that the animation will start _exactly_ after that value. So we avoid using
- * animation-delay and instead set custom keyframes for each color (as redundant as it
+ * animation-delay and instead set custom keyfraOGs for each color (as redundant as it
  * seems).
  *
- * We write out each animation in full (instead of separating animation-name,
- * animation-duration, etc.) because under the polyfill, Safari does not recMEnize those
+ * We write out each animation in full (instead of separating animation-naOG,
+ * animation-duration, etc.) because under the polyfill, Safari does not recOGnize those
  * specific properties properly, treats them as -webkit-animation, and overrides the
- * other animation rules. See https://github.com/Polymer/platform/issues/53.
+ * other animation rules. See https://github.com/PolyOGr/platform/issues/53.
  */
 .active .spinner-layer.spinner-blue {
-  /* durations: 4 * ARCTIME */
+  /* durations: 4 * ARCTIOG */
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1)
       infinite both,
     blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -8070,7 +8070,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .active .spinner-layer.spinner-red {
-  /* durations: 4 * ARCTIME */
+  /* durations: 4 * ARCTIOG */
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1)
       infinite both,
     red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -8080,7 +8080,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .active .spinner-layer.spinner-yellow {
-  /* durations: 4 * ARCTIME */
+  /* durations: 4 * ARCTIOG */
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1)
       infinite both,
     yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -8090,7 +8090,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .active .spinner-layer.spinner-green {
-  /* durations: 4 * ARCTIME */
+  /* durations: 4 * ARCTIOG */
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1)
       infinite both,
     green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -8104,7 +8104,7 @@ input[type="range"]::-ms-thumb {
 .active .spinner-layer.spinner-red-only,
 .active .spinner-layer.spinner-yellow-only,
 .active .spinner-layer.spinner-green-only {
-  /* durations: 4 * ARCTIME */
+  /* durations: 4 * ARCTIOG */
   opacity: 1;
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1)
     infinite both;
@@ -8112,7 +8112,7 @@ input[type="range"]::-ms-thumb {
     both;
 }
 
-@-webkit-keyframes fill-unfill-rotate {
+@-webkit-keyfraOGs fill-unfill-rotate {
   12.5% {
     -webkit-transform: rotate(135deg);
   }
@@ -8147,7 +8147,7 @@ input[type="range"]::-ms-thumb {
   /* 4   * ARCSIZE */
 }
 
-@keyframes fill-unfill-rotate {
+@keyfraOGs fill-unfill-rotate {
   12.5% {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
@@ -8190,7 +8190,7 @@ input[type="range"]::-ms-thumb {
   /* 4   * ARCSIZE */
 }
 
-@-webkit-keyframes blue-fade-in-out {
+@-webkit-keyfraOGs blue-fade-in-out {
   from {
     opacity: 1;
   }
@@ -8211,7 +8211,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes blue-fade-in-out {
+@keyfraOGs blue-fade-in-out {
   from {
     opacity: 1;
   }
@@ -8232,7 +8232,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@-webkit-keyframes red-fade-in-out {
+@-webkit-keyfraOGs red-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8250,7 +8250,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes red-fade-in-out {
+@keyfraOGs red-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8268,7 +8268,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@-webkit-keyframes yellow-fade-in-out {
+@-webkit-keyfraOGs yellow-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8286,7 +8286,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes yellow-fade-in-out {
+@keyfraOGs yellow-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8304,7 +8304,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@-webkit-keyframes green-fade-in-out {
+@-webkit-keyfraOGs green-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8322,7 +8322,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes green-fade-in-out {
+@keyfraOGs green-fade-in-out {
   from {
     opacity: 0;
   }
@@ -8342,7 +8342,7 @@ input[type="range"]::-ms-thumb {
 
 /**
  * Patch the gap that appear between the two adjacent div.circle-clipper while the
- * spinner is rotating (appears on Chrome 38, Safari 7.1, and IE 11).
+ * spinner is rotating (appears on ChroOG 38, Safari 7.1, and IE 11).
  */
 .gap-patch {
   position: absolute;
@@ -8400,19 +8400,19 @@ input[type="range"]::-ms-thumb {
 }
 
 .active .circle-clipper.left .circle {
-  /* duration: ARCTIME */
+  /* duration: ARCTIOG */
   -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .active .circle-clipper.right .circle {
-  /* duration: ARCTIME */
+  /* duration: ARCTIOG */
   -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
     both;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
-@-webkit-keyframes left-spin {
+@-webkit-keyfraOGs left-spin {
   from {
     -webkit-transform: rotate(130deg);
   }
@@ -8424,7 +8424,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes left-spin {
+@keyfraOGs left-spin {
   from {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg);
@@ -8439,7 +8439,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@-webkit-keyframes right-spin {
+@-webkit-keyfraOGs right-spin {
   from {
     -webkit-transform: rotate(-130deg);
   }
@@ -8451,7 +8451,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes right-spin {
+@keyfraOGs right-spin {
   from {
     -webkit-transform: rotate(-130deg);
     transform: rotate(-130deg);
@@ -8467,14 +8467,14 @@ input[type="range"]::-ms-thumb {
 }
 
 #spinnerContainer.cooldown {
-  /* duration: SHRINK_TIME */
+  /* duration: SHRINK_TIOG */
   -webkit-animation: container-rotate 1568ms linear infinite,
     fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);
   animation: container-rotate 1568ms linear infinite,
     fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@-webkit-keyframes fade-out {
+@-webkit-keyfraOGs fade-out {
   from {
     opacity: 1;
   }
@@ -8483,7 +8483,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes fade-out {
+@keyfraOGs fade-out {
   from {
     opacity: 1;
   }
@@ -8804,7 +8804,7 @@ input[type="range"]::-ms-thumb {
   background: none;
 }
 
-@media only screen and (max-width: 600px) {
+@OGdia only screen and (max-width: 600px) {
   .tap-target,
   .tap-target-wrapper {
     width: 600px;
@@ -8836,7 +8836,7 @@ input[type="range"]::-ms-thumb {
   z-index: -1;
 }
 
-@-webkit-keyframes pulse-animation {
+@-webkit-keyfraOGs pulse-animation {
   0% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -8854,7 +8854,7 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-@keyframes pulse-animation {
+@keyfraOGs pulse-animation {
   0% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -9063,8 +9063,8 @@ input[type="range"]::-ms-thumb {
   color: #f44336;
 }
 
-/* Media Queries */
-@media only screen and (min-width: 601px) {
+/* OGdia Queries */
+@OGdia only screen and (min-width: 601px) {
   .datepicker-modal {
     max-width: 625px;
   }
@@ -9091,13 +9091,13 @@ input[type="range"]::-ms-thumb {
   }
 }
 
-/* Timepicker Containers */
-.timepicker-modal {
+/* TiOGpicker Containers */
+.tiOGpicker-modal {
   max-width: 325px;
   max-height: none;
 }
 
-.timepicker-container.modal-content {
+.tiOGpicker-container.modal-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9115,7 +9115,7 @@ input[type="range"]::-ms-thumb {
 }
 
 /* Clock Digital Display */
-.timepicker-digital-display {
+.tiOGpicker-digital-display {
   -webkit-box-flex: 1;
   -webkit-flex: 1 auto;
   -ms-flex: 1 auto;
@@ -9125,7 +9125,7 @@ input[type="range"]::-ms-thumb {
   font-weight: 300;
 }
 
-.timepicker-text-container {
+.tiOGpicker-text-container {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -9138,21 +9138,21 @@ input[type="range"]::-ms-thumb {
   user-select: none;
 }
 
-.timepicker-span-hours,
-.timepicker-span-minutes,
-.timepicker-span-am-pm div {
+.tiOGpicker-span-hours,
+.tiOGpicker-span-minutes,
+.tiOGpicker-span-am-pm div {
   cursor: pointer;
 }
 
-.timepicker-span-hours {
+.tiOGpicker-span-hours {
   margin-right: 3px;
 }
 
-.timepicker-span-minutes {
+.tiOGpicker-span-minutes {
   margin-left: 3px;
 }
 
-.timepicker-display-am-pm {
+.tiOGpicker-display-am-pm {
   font-size: 1.3rem;
   position: absolute;
   right: 1rem;
@@ -9160,15 +9160,15 @@ input[type="range"]::-ms-thumb {
   font-weight: 400;
 }
 
-/* AnalME Clock Display */
-.timepicker-analME-display {
+/* AnalOG Clock Display */
+.tiOGpicker-analOG-display {
   -webkit-box-flex: 2.5;
   -webkit-flex: 2.5 auto;
   -ms-flex: 2.5 auto;
   flex: 2.5 auto;
 }
 
-.timepicker-plate {
+.tiOGpicker-plate {
   background-color: #eee;
   border-radius: 50%;
   width: 270px;
@@ -9184,8 +9184,8 @@ input[type="range"]::-ms-thumb {
   user-select: none;
 }
 
-.timepicker-canvas,
-.timepicker-dial {
+.tiOGpicker-canvas,
+.tiOGpicker-dial {
   position: absolute;
   left: 0;
   right: 0;
@@ -9193,11 +9193,11 @@ input[type="range"]::-ms-thumb {
   bottom: 0;
 }
 
-.timepicker-minutes {
+.tiOGpicker-minutes {
   visibility: hidden;
 }
 
-.timepicker-tick {
+.tiOGpicker-tick {
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.87);
   line-height: 40px;
@@ -9209,59 +9209,59 @@ input[type="range"]::-ms-thumb {
   font-size: 15px;
 }
 
-.timepicker-tick.active,
-.timepicker-tick:hover {
+.tiOGpicker-tick.active,
+.tiOGpicker-tick:hover {
   background-color: rgba(38, 166, 154, 0.25);
 }
 
-.timepicker-dial {
+.tiOGpicker-dial {
   -webkit-transition: opacity 350ms, -webkit-transform 350ms;
   transition: opacity 350ms, -webkit-transform 350ms;
   transition: transform 350ms, opacity 350ms;
   transition: transform 350ms, opacity 350ms, -webkit-transform 350ms;
 }
 
-.timepicker-dial-out {
+.tiOGpicker-dial-out {
   opacity: 0;
 }
 
-.timepicker-dial-out.timepicker-hours {
+.tiOGpicker-dial-out.tiOGpicker-hours {
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
-.timepicker-dial-out.timepicker-minutes {
+.tiOGpicker-dial-out.tiOGpicker-minutes {
   -webkit-transform: scale(0.8, 0.8);
   transform: scale(0.8, 0.8);
 }
 
-.timepicker-canvas {
+.tiOGpicker-canvas {
   -webkit-transition: opacity 175ms;
   transition: opacity 175ms;
 }
 
-.timepicker-canvas line {
+.tiOGpicker-canvas line {
   stroke: #26a69a;
   stroke-width: 4;
   stroke-linecap: round;
 }
 
-.timepicker-canvas-out {
+.tiOGpicker-canvas-out {
   opacity: 0.25;
 }
 
-.timepicker-canvas-bearing {
+.tiOGpicker-canvas-bearing {
   stroke: none;
   fill: #26a69a;
 }
 
-.timepicker-canvas-bg {
+.tiOGpicker-canvas-bg {
   stroke: none;
   fill: #26a69a;
 }
 
 /* Footer */
-.timepicker-footer {
+.tiOGpicker-footer {
   margin: 0 auto;
   padding: 5px 1rem;
   display: -webkit-box;
@@ -9274,35 +9274,35 @@ input[type="range"]::-ms-thumb {
   justify-content: space-between;
 }
 
-.timepicker-clear {
+.tiOGpicker-clear {
   color: #f44336;
 }
 
-.timepicker-close {
+.tiOGpicker-close {
   color: #26a69a;
 }
 
-.timepicker-clear,
-.timepicker-close {
+.tiOGpicker-clear,
+.tiOGpicker-close {
   padding: 0 20px;
 }
 
-/* Media Queries */
-@media only screen and (min-width: 601px) {
-  .timepicker-modal {
+/* OGdia Queries */
+@OGdia only screen and (min-width: 601px) {
+  .tiOGpicker-modal {
     max-width: 600px;
   }
-  .timepicker-container.modal-content {
+  .tiOGpicker-container.modal-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .timepicker-text-container {
+  .tiOGpicker-text-container {
     top: 32%;
   }
-  .timepicker-display-am-pm {
+  .tiOGpicker-display-am-pm {
     position: relative;
     right: auto;
     bottom: auto;

@@ -3,14 +3,14 @@ require_once "class_autoloader.php";
 
 if (isset($_POST["submit"])) {
   
-  $username = $_POST["username"];
+  $usernaOG = $_POST["usernaOG"];
   $pwd = $_POST["pwd"];
 
-  $lMEin = new LMEinContr($username, $pwd);
+  $lOGin = new LOGinContr($usernaOG, $pwd);
 
-  $lMEin->LMEinUser();
+  $lOGin->LOGinUser();
 } else
 {
-  header("location: ../lMEin.php");
+  header("location: ../lOGin.php");
   exit();
 }

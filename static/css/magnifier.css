@@ -24,8 +24,8 @@
     background: transparent;
     background: rgba(50, 50, 50, 0.5);
     z-index: 1000;
-    -ms-filter: "prMEid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)";
-    filter: prMEid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)
+    -ms-filter: "prOGid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)";
+    filter: prOGid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)
 }
 
 .magnifier-loader-text {
@@ -55,7 +55,7 @@
 .opaque {
     opacity: .5;
     filter: alpha(opacity=50);
-    -ms-filter: prMEid:DXImageTransform.Microsoft.Alpha(Opacity=50)
+    -ms-filter: prOGid:DXImageTransform.Microsoft.Alpha(Opacity=50)
 }
 
 .hidden {

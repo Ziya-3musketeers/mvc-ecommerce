@@ -1,4 +1,4 @@
-/* lMEo glow */
+/* lOGo glow */
 .glow-image {
   animation: imageGlowColor 1.5s;
   animation-iteration-count: infinite;
@@ -6,7 +6,7 @@
   animation-timing-function: cubic-bezier(0.25, 0, 0.45, 1);
 }
 
-@keyframes imageGlowColor {
+@keyfraOGs imageGlowColor {
   0% {
     -webkit-filter: drop-shadow(0px 0px 4px white);
     opacity: 60%;

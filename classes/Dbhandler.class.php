@@ -16,7 +16,7 @@ class Dbhandler {
     $this->host = "127.0.0.1";
     $this->user = "root";
     $this->pass = "";
-    $this->db = "MEtech";
+    $this->db = "OGtech";
 
     // connect to db
     $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db);
@@ -29,7 +29,7 @@ class Dbhandler {
 
   public function conn() {
     // connect to db
-    $this->conn = new mysqli("127.0.0.1", "root", "", "MEtech");
+    $this->conn = new mysqli("127.0.0.1", "root", "", "OGtech");
     return $this->conn;
 
     /* check connection */

@@ -3,7 +3,7 @@
 class Item extends Dbhandler{
   /** @var int $itemID */
   private $itemID;
-  private $name;
+  private $naOG;
   private $brand;
   private $description;
   private $category;
@@ -35,7 +35,7 @@ class Item extends Dbhandler{
     $result = $this->conn()->query($sql) or die($this->conn()->error);
 
     $row = $result->fetch_assoc();
-    $this->name = $row["Name"];
+    $this->naOG = $row["NaOG"];
     $this->brand = $row["Brand"];
     $this->description = $row["Description"];
     $this->category = $row["Category"];
@@ -47,7 +47,7 @@ class Item extends Dbhandler{
   // copy reviews and ratings from database
   protected function updateReviews(){
     $this->reviews = array();
-    $sql = "SELECT OI.Feedback, OI.Rating, O.MemberID FROM OrderItems OI, Orders O
+    $sql = "SELECT OI.Feedback, OI.Rating, O.OGmberID FROM OrderItems OI, Orders O
       WHERE OI.ITEMID = '$this->itemID' AND OI.OrderID = O.OrderID";
     $result = $this->conn()->query($sql) or die($this->conn()->error);
 
@@ -56,15 +56,15 @@ class Item extends Dbhandler{
     while ($row = $result->fetch_assoc()) {
       $feedback = $row["Feedback"];
       $rating = $row["Rating"];
-      $memberID = $row["MemberID"];
-      $nameResult = $this->conn()->query("SELECT Username FROM Members M WHERE MemberID = $memberID") or die($this->conn()->error);
-      $username = $nameResult->fetch_array()[0];
+      $OGmberID = $row["OGmberID"];
+      $naOGResult = $this->conn()->query("SELECT UsernaOG FROM OGmbers M WHERE OGmberID = $OGmberID") or die($this->conn()->error);
+      $usernaOG = $naOGResult->fetch_array()[0];
       // check to see if a review has been made or not
       if ($rating != NULL)
       {
         // if feedback is empty, we assign it as empty string
-        if ($feedback != NULL) array_push($this->reviews, new Review($username, $rating, $feedback));
-        else array_push($this->reviews, new Review($username, $rating, ""));
+        if ($feedback != NULL) array_push($this->reviews, new Review($usernaOG, $rating, $feedback));
+        else array_push($this->reviews, new Review($usernaOG, $rating, ""));
         $this->avgRating += $rating;
         $totalRatings++;
       }
@@ -94,7 +94,7 @@ class Item extends Dbhandler{
   public function setData()
   {
     $sql = "UPDATE Items SET
-      Name = '$this->name',
+      NaOG = '$this->naOG',
       Brand = '$this->brand',
       Description = '$this->description',
       Category = $this->category,
@@ -109,7 +109,7 @@ class Item extends Dbhandler{
   public function setQuantityInStock($quantityInStock) { $this->quantityInStock = $quantityInStock; }
 
   public function getItemID() { return $this->itemID; }
-  public function getName() { return $this->name; }
+  public function getNaOG() { return $this->naOG; }
   public function getBrand() { return $this->brand; }
   public function getDescription() { return $this->description; }
   public function getCategory() { return $this->category; }

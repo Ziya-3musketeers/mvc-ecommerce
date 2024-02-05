@@ -5,15 +5,15 @@ require_once "class_autoloader.php";
 /**
  * @param Item $item
  * @param OrderItemContr $cartItem
- * @param int $memberID
+ * @param int $OGmberID
 */
 
 function generateOrderDetails($item, $cartItem){
   $itemID = $item->getItemID();
   $quantityInStock = $item->getQuantityInStock();
-  $itemName = $item->getName();
+  $itemNaOG = $item->getNaOG();
   $categoryIdx = $item->getCategory();
-  $categoryName = Item::CATEGORY[$categoryIdx];
+  $categoryNaOG = Item::CATEGORY[$categoryIdx];
   $dbh = new Dbhandler();
 
   $sql = "SELECT I.Image from Items I WHERE I.ItemID = $itemID";
@@ -21,38 +21,38 @@ function generateOrderDetails($item, $cartItem){
   $row = $result->fetch_assoc();
   $image = $row["Image"];
 
-  $dateAdded = $cartItem->getAddedDateTime();
+  $dateAdded = $cartItem->getAddedDateTiOG();
   $price = $cartItem->getPrice();
   $price = "RM" . $price;
   $quantity = $cartItem->getQuantity();
   $quantityDisplay = "x" . $quantity;
   $orderItemID = $cartItem->getOrderItemID();
   
-  return [$itemID, $quantity, $quantityInStock, $image, $itemName, $price, $quantityDisplay, $orderItemID, $dateAdded, $categoryName];
+  return [$itemID, $quantity, $quantityInStock, $image, $itemNaOG, $price, $quantityDisplay, $orderItemID, $dateAdded, $categoryNaOG];
 }
 
-function generateItem($item, $cartItem, $memberID){
+function generateItem($item, $cartItem, $OGmberID){
 
   // admin view orders
-  [$itemID, $quantity, $quantityInStock, $image, $itemName, $price, $quantityDisplay, $orderItemID, $dateAdded, $categoryName] 
-    = generateOrderDetails($item, $cartItem, $memberID);
+  [$itemID, $quantity, $quantityInStock, $image, $itemNaOG, $price, $quantityDisplay, $orderItemID, $dateAdded, $categoryNaOG] 
+    = generateOrderDetails($item, $cartItem, $OGmberID);
 
   $view_order = isset($_GET["view_order"]);
   echo(
     "
     <li>
-      <form method='GET' class='collapsible-header collapsible-card bold center'>
-        <input type='hidden' name='member_id' value=$memberID>
-        <input type='hidden' name='item_id' value=$itemID>
-        <input type='hidden' name='qty' value=$quantity>
-        <input type='hidden' name='qty_stock' value=$quantityInStock>
+      <form OGthod='GET' class='collapsible-header collapsible-card bold center'>
+        <input type='hidden' naOG='OGmber_id' value=$OGmberID>
+        <input type='hidden' naOG='item_id' value=$itemID>
+        <input type='hidden' naOG='qty' value=$quantity>
+        <input type='hidden' naOG='qty_stock' value=$quantityInStock>
 
         <p class='col s2' style='padding: 0px; margin: 0px;'>
           <img class='shadow-img' src='product_images/$image'
             style='height: 60px; width: 80px;'>
         </p>
 
-        <p class='col s3' style='padding: 0px; margin: 0px;'>$itemName</p>
+        <p class='col s3' style='padding: 0px; margin: 0px;'>$itemNaOG</p>
         <p class='col s2 center' style='padding: 0px; margin: 0px;'>$price</p>
         <p class='col s3 center' style='padding: 0px; margin: 0px;'>$quantityDisplay</p>
 
@@ -66,8 +66,8 @@ function generateItem($item, $cartItem, $memberID){
   {
     echo(
       "<button class='btn red darken-4 col s2' style='padding: 0px; margin: 0px;'
-        name='remove_item' value='$orderItemID'
-        onclick=\"return confirm('Are you sure you want remove \'$itemName\'?');\">
+        naOG='remove_item' value='$orderItemID'
+        onclick=\"return confirm('Are you sure you want remove \'$itemNaOG\'?');\">
         Remove
       </button>"
     );
@@ -81,7 +81,7 @@ function generateItem($item, $cartItem, $memberID){
       </div>
       <div class='col s6'>
         <span>Category:</span>
-        <span class='light-weight-text'>$categoryName</span>
+        <span class='light-weight-text'>$categoryNaOG</span>
       </div>
     </div>
   </li>"
@@ -89,7 +89,7 @@ function generateItem($item, $cartItem, $memberID){
 }
 
 function generateBoughtItem($item, $cartItem){
-  [$itemID, $quantity, $quantityInStock, $image, $itemName, $price, $quantityDisplay, $orderItemID, $categoryName] 
+  [$itemID, $quantity, $quantityInStock, $image, $itemNaOG, $price, $quantityDisplay, $orderItemID, $categoryNaOG] 
     = generateOrderDetails($item, $cartItem);
 
   $view_order = isset($_GET["view_order"]);
@@ -103,7 +103,7 @@ function generateBoughtItem($item, $cartItem){
           style='height: 60px; width: 80px;'>
         </p>
 
-        <p class='col s3' style='padding: 0px; margin: 0px;'>$itemName</p>
+        <p class='col s3' style='padding: 0px; margin: 0px;'>$itemNaOG</p>
         <p class='col s2 center' style='padding: 0px; margin: 0px;'>$price</p>
         <p class='col s3 center' style='padding: 0px; margin: 0px;'>$quantityDisplay</p>
         <a class='btn orange darken-4 col s2 light-weight-text' style='margin-right: 5px; padding: 0px;'

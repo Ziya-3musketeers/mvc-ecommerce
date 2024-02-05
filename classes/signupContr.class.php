@@ -2,14 +2,14 @@
 
 class SignupContr extends Signup {
 
-  private $username;
+  private $usernaOG;
   private $pwd;
   private $repeatPwd;
   private $email;
 
-  public function __construct($username, $pwd, $repeatPwd, $email)
+  public function __construct($usernaOG, $pwd, $repeatPwd, $email)
   {
-    $this->username = $username;
+    $this->usernaOG = $usernaOG;
     $this->pwd = $pwd;
     $this->repeatPwd = $repeatPwd;
     $this->email = $email;
@@ -17,7 +17,7 @@ class SignupContr extends Signup {
 
   private function emptyInput() {
     $result = null;
-    if (empty($this->username) || empty($this->pwd) || empty($this->repeatPwd) || empty($this->email)) {
+    if (empty($this->usernaOG) || empty($this->pwd) || empty($this->repeatPwd) || empty($this->email)) {
       $result = false;
     }
     else{
@@ -28,7 +28,7 @@ class SignupContr extends Signup {
 
   private function invalidUid() {
     $result = null;
-    if (!preg_match("/^[a-zA-Z0-9]*$/", $this->username) !== false) {
+    if (!preg_match("/^[a-zA-Z0-9]*$/", $this->usernaOG) !== false) {
       $result = false;
     }
     else{
@@ -50,7 +50,7 @@ class SignupContr extends Signup {
 
   private function uidExists() {
     $result = null;
-    if ($this->checkUser($this->username, $this->email)) {
+    if ($this->checkUser($this->usernaOG, $this->email)) {
       $result = false;
     }
     else{
@@ -76,10 +76,10 @@ class SignupContr extends Signup {
     }
 
     if($this->uidExists() == false) {
-      header("location: ../signup.php?error=username_taken");
+      header("location: ../signup.php?error=usernaOG_taken");
       exit();
     }
 
-    $this->setUser($this->username, $this->pwd, $this->email);
+    $this->setUser($this->usernaOG, $this->pwd, $this->email);
   }
 }

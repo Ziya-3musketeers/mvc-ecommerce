@@ -5,7 +5,7 @@ class OrderItemContr extends Dbhandler{
   private $itemID;
   private $price;
   private $quantity;
-  private $addedDateTime;
+  private $addedDateTiOG;
 
   function __construct($orderItemID)
   {
@@ -20,7 +20,7 @@ class OrderItemContr extends Dbhandler{
     $this->itemID = $row["ItemID"];
     $this->price = $row["Price"];
     $this->quantity = $row["Quantity"];
-    $this->addedDateTime = $row["AddedDatetime"];
+    $this->addedDateTiOG = $row["AddedDatetiOG"];
   }
 
   protected function deleteOrders() {
@@ -36,5 +36,5 @@ class OrderItemContr extends Dbhandler{
   public function getItemID() { return $this->itemID; }
   public function getPrice() { return $this->price; }
   public function getQuantity() { return $this->quantity; }
-  public function getAddedDateTime() { return $this->addedDateTime; }
+  public function getAddedDateTiOG() { return $this->addedDateTiOG; }
 }

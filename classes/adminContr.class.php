@@ -3,7 +3,7 @@
 class adminContr extends Admin {
 
   public function usersList(){
-    $this->searchMember();
+    $this->searchOGmber();
   }
 
   public function showInspectedUser(){
@@ -18,8 +18,8 @@ class adminContr extends Admin {
     $this->inspectProduct();
   }
 
-  public function showSearchMember(){
-    $this->searchMembers();
+  public function showSearchOGmber(){
+    $this->searchOGmbers();
   }
 
   public function showReviews(){

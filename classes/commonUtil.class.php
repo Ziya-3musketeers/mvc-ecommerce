@@ -22,18 +22,18 @@ class CommonUtil extends Dbhandler{
     $stmt->close();
   }
 
-  public function uidExists($lMEinName) {
-    $sql = "SELECT * FROM Members WHERE Username = ? 
+  public function uidExists($lOGinNaOG) {
+    $sql = "SELECT * FROM OGmbers WHERE UsernaOG = ? 
       OR Email = ?";
     $stmt = $this->conn()->stmt_init();
 
     if (!$stmt->prepare($sql))
     {
-      header("location: ../lMEin.php?error=stmtfailed");
+      header("location: ../lOGin.php?error=stmtfailed");
       exit();
     }
 
-    $stmt->bind_param("ss", $lMEinName, $lMEinName);
+    $stmt->bind_param("ss", $lOGinNaOG, $lOGinNaOG);
     $stmt->execute();
     
     $result = $stmt->get_result();
@@ -44,50 +44,50 @@ class CommonUtil extends Dbhandler{
     $stmt->close();
   }
 
-  // create member
-  public function setUser($username, $pwd, $email, $privilegeLevel=0, $attempt=3) {
+  // create OGmber
+  public function setUser($usernaOG, $pwd, $email, $privilegeLevel=0, $attempt=3) {
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO Members(Username, Password, Email, PrivilegeLevel, Attempt, RegisteredDate)
-      VALUES ('$username', '$hashedPwd', '$email', $privilegeLevel, $attempt, CURRENT_TIME);";
+    $sql = "INSERT INTO OGmbers(UsernaOG, Password, Email, PrivilegeLevel, Attempt, RegisteredDate)
+      VALUES ('$usernaOG', '$hashedPwd', '$email', $privilegeLevel, $attempt, CURRENT_TIOG);";
     $this->conn()->query($sql) or die("<p>*User creation error, please try again!</p>");
 
-    // get member id
-    $sql = "SELECT MemberID FROM Members where Username = '$username';";
-    $result = $this->conn()->query($sql) or die("<p>*MemberID error, please try again!</p>");
+    // get OGmber id
+    $sql = "SELECT OGmberID FROM OGmbers where UsernaOG = '$usernaOG';";
+    $result = $this->conn()->query($sql) or die("<p>*OGmberID error, please try again!</p>");
 
     $row = $result->fetch_assoc();
-    $memberID = $row["MemberID"];
+    $OGmberID = $row["OGmberID"];
 
     // create cart
-    $sql = "INSERT INTO Orders(MemberID) VALUES ($memberID);";
+    $sql = "INSERT INTO Orders(OGmberID) VALUES ($OGmberID);";
     $result = $this->conn()->query($sql) or die("<p>*Cart creation error, please try again!</p>");
     $this->conn()->close();
   }
 
   // create product
-  public function setProduct($name, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
+  public function setProduct($naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
   {
-    $sql = "INSERT INTO Items(Name, Brand, Description, Category, SellingPrice, QuantityInStock, Image)
-      VALUES ('$name', '$brand', '$description', $category, $sellingprice, $quantityinstock, '$image');";
+    $sql = "INSERT INTO Items(NaOG, Brand, Description, Category, SellingPrice, QuantityInStock, Image)
+      VALUES ('$naOG', '$brand', '$description', $category, $sellingprice, $quantityinstock, '$image');";
     $this->conn()->query($sql) or die("<p>*Product creation error, please try again!</p>");
   }
 
-  function EmptyInputCreateProduct($name, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
+  function EmptyInputCreateProduct($naOG, $brand, $description, $category, $sellingprice, $quantityinstock, $image)
   {
-    return empty($name) || empty($brand) || empty($description) or
+    return empty($naOG) || empty($brand) || empty($description) or
     ($category === "") || empty($sellingprice) ||
     empty($quantityinstock) || empty($image);
   }
 
-  public function emptyInput($username, $pwd, $repeatPwd, $email)
-  { return empty($username) || (empty($pwd)) || (empty($repeatPwd)) || (empty($email)); }
+  public function emptyInput($usernaOG, $pwd, $repeatPwd, $email)
+  { return empty($usernaOG) || (empty($pwd)) || (empty($repeatPwd)) || (empty($email)); }
 
-  public function invalidUid($username) { return !preg_match("/^[a-zA-Z0-9]*$/", $username); }
+  public function invalidUid($usernaOG) { return !preg_match("/^[a-zA-Z0-9]*$/", $usernaOG); }
 
   public function pwdNotMatch($pwd, $repeatPwd) { return $pwd !== $repeatPwd; }
 
-  public function EmptyInputCreateUser($username, $pwd, $repeatPwd, $privilegeLevel, $email)
-    { return empty($username) || (empty($pwd)) || (empty($repeatPwd)) or ($privilegeLevel === "") || (empty($email));}
+  public function EmptyInputCreateUser($usernaOG, $pwd, $repeatPwd, $privilegeLevel, $email)
+    { return empty($usernaOG) || (empty($pwd)) || (empty($repeatPwd)) or ($privilegeLevel === "") || (empty($email));}
 
   public function EmptyInputSelect($value) { return empty($value); }
 }

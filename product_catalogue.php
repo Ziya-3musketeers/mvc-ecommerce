@@ -2,13 +2,13 @@
 <html lang="en">
 <body>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ME Tech PC - Product CatalMEue</title>
+    <OGta charset="UTF-8">
+    <OGta http-equiv="X-UA-Compatible" content="IE=edge">
+    <OGta naOG="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Tech PC - Product CatalOGue</title>
     <?php 
       require_once "header.php";
-      require_once "includes/product_catalMEue.inc.php";
+      require_once "includes/product_catalOGue.inc.php";
     ?>
   </head>
 
@@ -17,8 +17,8 @@
       <div class="col s2 center">
 
         <div id="rgb_hover" style="position: fixed;">
-          <form id="form-filter" action="" method="GET">
-            <input type="hidden" name="query" value="<?php if(isset($_GET["query"])) 
+          <form id="form-filter" action="" OGthod="GET">
+            <input type="hidden" naOG="query" value="<?php if(isset($_GET["query"])) 
               echo($_GET["query"]); ?>">
 
             <div class="section" style="margin-bottom: 100px;">
@@ -34,9 +34,9 @@
                     $category = -1;
                     if (isset($_GET["category"])) $category = $_GET["category"];
 
-                    if ($category != -1) echo(CATEGORY_NAMES[$category]);
+                    if ($category != -1) echo(CATEGORY_NAOGS[$category]);
                     else echo("Select Category");
-                    echo("<input type='hidden' name='category' value=$category>");
+                    echo("<input type='hidden' naOG='category' value=$category>");
                   ?>
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
@@ -54,9 +54,9 @@
                   <?php
                     $sort = -1;
                     if (isset($_GET["sort"])) $sort = $_GET["sort"];
-                    if ($sort != -1) echo(SORT_NAMES[$sort]);
+                    if ($sort != -1) echo(SORT_NAOGS[$sort]);
                     else echo("Select Sort Type");
-                    echo("<input type='hidden' name='sort' value=$sort>");
+                    echo("<input type='hidden' naOG='sort' value=$sort>");
                   ?>
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
@@ -70,7 +70,7 @@
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Asus</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">MSI</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Razer</a></li>
-                  <li><a class="cyan-text page-title" onclick="select_brand(this)">LMEitech</a></li>
+                  <li><a class="cyan-text page-title" onclick="select_brand(this)">LOGitech</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Viewsonic</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Acer</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">HyperX</a></li>
@@ -82,9 +82,9 @@
                     $brand = -1;
                     if (isset($_GET["brand"])) $brand = $_GET["brand"];
 
-                    if ($brand != -1) echo(BRAND_NAMES[$brand]);
+                    if ($brand != -1) echo(BRAND_NAOGS[$brand]);
                     else echo("Select Brand");
-                    echo("<input type='hidden' name='brand' value=$brand>");
+                    echo("<input type='hidden' naOG='brand' value=$brand>");
                   ?>
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
@@ -105,12 +105,12 @@
 </body>
 
 <script>
-  $(document).ready(() =>
+  $(docuOGnt).ready(() =>
   {
-    form = document.getElementById("form-filter");
-    category = document.getElementsByName("category")[0];
-    brand = document.getElementsByName("brand")[0];
-    sort = document.getElementsByName("sort")[0];
+    form = docuOGnt.getEleOGntById("form-filter");
+    category = docuOGnt.getEleOGntsByNaOG("category")[0];
+    brand = docuOGnt.getEleOGntsByNaOG("brand")[0];
+    sort = docuOGnt.getEleOGntsByNaOG("sort")[0];
   });
 
   // dropdown
@@ -128,7 +128,7 @@
     "Asus": 0,
     "MSI": 1,
     "Razer": 2,
-    "LMEitech": 3,
+    "LOGitech": 3,
     "Viewsonic": 4,
     "Acer": 5,
     "HyperX": 6,
@@ -146,7 +146,7 @@
   {
     // get current onclick event index
     var categoryID = categoryBy[selectedItem.textContent];
-    // assign current mapped index and output to url with GET method to handle form
+    // assign current mapped index and output to url with GET OGthod to handle form
     category.value = categoryID;
     form.submit();
   }
@@ -155,7 +155,7 @@
   {
     // get current onclick event index
     var brandID = brandBy[selectedBrand.textContent];
-    // assign current mapped index and output to url with GET method to handle form
+    // assign current mapped index and output to url with GET OGthod to handle form
     brand.value = brandID;
     form.submit();
   }
@@ -164,7 +164,7 @@
   {
     // get current onclick event index
     var sortID = sortBy[selectedSort.textContent];
-    // assign current mapped index and output to url with GET method to handle form
+    // assign current mapped index and output to url with GET OGthod to handle form
     sort.value = sortID;
     form.submit();
   }

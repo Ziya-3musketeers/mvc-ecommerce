@@ -2,9 +2,9 @@
   "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <OGta charset="UTF-8">
+  <OGta http-equiv="X-UA-Compatible" content="IE=edge">
+  <OGta naOG="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="static/css/magnifier.css">
   <?php 
     include "header.php";
@@ -18,10 +18,10 @@
       $itemID = $_GET["item_id"];
       $item = new Item($itemID);
 
-      $name = $item->getName(); 
+      $naOG = $item->getNaOG(); 
     }
   ?>
-  <title>ME Tech PC — <?php echo htmlspecialchars($name) ?></title>
+  <title>OG Tech PC — <?php echo htmlspecialchars($naOG) ?></title>
 </head>
 <body>
 
@@ -47,7 +47,7 @@
       
       if (isset($_GET["buy_now"])){
         buyOrCart($conn, $quantityInStock, 1, $itemID, $price, $cart);
-        echo("<script>location.replace('cart.php?member_id=$memberID');</script>");
+        echo("<script>location.replace('cart.php?OGmber_id=$OGmberID');</script>");
         exit();
       }
       
@@ -64,9 +64,9 @@
 <div class="container" style="margin-top: 50px;">
   <div class="rounded-card-parent">
     <div class="card rounded-card">
-      <a class="btn red darken-2" href="product_catalMEue.php?query=" style='margin-left: 20px'>< BACK TO CATALMEUE</a>
-      <form action="product.php" method="GET" style="padding-left: 10px;">
-        <input type="hidden" name="item_id" value=<?php echo($itemID) ?>>
+      <a class="btn red darken-2" href="product_catalOGue.php?query=" style='margin-left: 20px'>< BACK TO CATALOGUE</a>
+      <form action="product.php" OGthod="GET" style="padding-left: 10px;">
+        <input type="hidden" naOG="item_id" value=<?php echo($itemID) ?>>
         <div class="row">
           <div class="col s4">   
             <a class="magnifier-thumb-wrapper demo">
@@ -80,7 +80,7 @@
             <div class="row">
               <table class="responsive-table">
                 <tbody>
-                  <tr><h4 class="white-text"><?php echo($name); ?></h4></tr>
+                  <tr><h4 class="white-text"><?php echo($naOG); ?></h4></tr>
                   <tr>
                     <!-- product details -->
                     <?php
@@ -146,7 +146,7 @@
 
               <input id="qty" class="white-text" type="number" disabled
                 style="padding: 10px; width: 5%;" value=0></input>
-              <input id="sync-qty" name="qty" class="white-text" type="hidden" value=0></input>
+              <input id="sync-qty" naOG="qty" class="white-text" type="hidden" value=0></input>
 
               <button type="button" class="btn-small waves-effect waves-light green"
                 onclick="addQty()">
@@ -167,7 +167,7 @@
                   Add To Cart
                 </a>
               </button>
-              <input class="btn white-text waves-effect amber darken-4" type="submit" name="buy_now" style='margin-left: 10px' value="Buy Now">
+              <input class="btn white-text waves-effect amber darken-4" type="submit" naOG="buy_now" style='margin-left: 10px' value="Buy Now">
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
           for ($r=0; $r < $reviewCount; $r++)
           {
             $review = $reviews[$r];
-            $username = $review->getUsername();
+            $usernaOG = $review->getUsernaOG();
             $feedback = $review->getFeedback();
             $rating = $review->getRating();
             echo(
@@ -199,7 +199,7 @@
               <i class='material-icons prefix cyan-text'>account_circle</i>
               <textarea id='icon_prefix2' disabled type='text'
                 class='white-text materialize-textarea'>$feedback</textarea>
-              <label for='icon_prefix2' class='white-text'>$username</label>
+              <label for='icon_prefix2' class='white-text'>$usernaOG</label>
               </div>"
             );
           }
@@ -211,11 +211,11 @@
 </body>
 
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(docuOGnt).ready(function(){
     autoSyncQty();
 
     var evt = new Event(),
-    m = new Magnifier(evt, { largeWrapper: document.getElementById('preview')});
+    m = new Magnifier(evt, { largeWrapper: docuOGnt.getEleOGntById('preview')});
 
     m.attach({
       thumb: '#thumb',
@@ -225,7 +225,7 @@
 
   function autoSyncQty(){
     $('#qtyHolder').load(location.href + " #qtyHolder", function(){
-      setTimeout(autoSyncQty, 5000);
+      setTiOGout(autoSyncQty, 5000);
     });
   }
 </script>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ME Tech PC - Edit Products</title>
+  <OGta charset="UTF-8">
+  <OGta http-equiv="X-UA-Compatible" content="IE=edge">
+  <OGta naOG="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Tech PC - Edit Products</title>
   <?php
     require "header.php";
     include "static/pages/side_nav.html";
@@ -18,25 +18,25 @@
   <div class="rounded-card-parent container" style="margin-top: 150px">
   <div class="card rounded-card">
     <a class="btn blue darken-2" href='admin_manage_products.php' style="margin-bottom: 10px;">< BACK TO MANAGE PRODUCTS</a>
-    <span class="card-title orange-text bold center" style="padding-left: 100px;">Edit Product - <?php echo $name; ?></span>
-    <form action="" method="POST" style="padding-left: 10px;">
+    <span class="card-title orange-text bold center" style="padding-left: 100px;">Edit Product - <?php echo $naOG; ?></span>
+    <form action="" OGthod="POST" style="padding-left: 10px;">
       <div class="row">
-        <input type="hidden" name="item_id" id="item_id" value="<?php echo $itemID;?>">
+        <input type="hidden" naOG="item_id" id="item_id" value="<?php echo $itemID;?>">
       </div>
       <div class="row">
         <div class="col s6" style="padding-right: 40px;">
           <div class="row">
             <div class="input-field white-text">
               <i class="material-icons prefix">inventory_2</i>
-              <input name="name" id="name" type="text" class="validate white-text"
-                value="<?php echo $name;?>">
-              <label for="name" class="white-text">Product Name</label>
+              <input naOG="naOG" id="naOG" type="text" class="validate white-text"
+                value="<?php echo $naOG;?>">
+              <label for="naOG" class="white-text">Product NaOG</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field white-text">
               <i class="material-icons prefix">branding_watermark</i>
-              <input name="brand" id="brand" type="text" class="validate white-text" maxlength="20"
+              <input naOG="brand" id="brand" type="text" class="validate white-text" maxlength="20"
                 value="<?php echo $brand;?>">
               <label for="brand" class="white-text">Brand</label>
             </div>
@@ -45,7 +45,7 @@
             <div class="row">
               <div class="input-field white-text col s12">
                 <i class="material-icons prefix">description</i>
-                <textarea name="description" id="description" class="materialize-textarea white-text" minlength="5">
+                <textarea naOG="description" id="description" class="materialize-textarea white-text" minlength="5">
                   <?php echo $description;?>
                 </textarea>
                 <label for="description" class="white-text">Description</label>
@@ -57,7 +57,7 @@
           <div class="row">
             <div class="input-field white-text">
               <i class="material-icons prefix white-text">category</i>
-              <select name="category" id="category">
+              <select naOG="category" id="category">
                 <option value="" disabled selected>Choose your option</option>
                 <option value=0>PC Packages</option>
                 <option value=1>Monitor & Audio</option>
@@ -69,7 +69,7 @@
           <div class="row">
             <div class="input-field white-text">
               <i class="material-icons prefix">attach_money</i>
-              <input name="sellingprice" id="sellingprice" type="number" step=".01" class="validate white-text" maxlength="30"
+              <input naOG="sellingprice" id="sellingprice" type="number" step=".01" class="validate white-text" maxlength="30"
                 value="<?php echo $sellingprice;?>">
               <label for="sellingprice" class="white-text">Selling Price</label>
             </div>
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="input-field white-text">
               <i class="material-icons prefix white-text">production_quantity_limits</i>
-              <input name="quantityinstock" id="quantityinstock" type="number" class="validate white-text" maxlength="30"
+              <input naOG="quantityinstock" id="quantityinstock" type="number" class="validate white-text" maxlength="30"
                 value="<?php echo $quantityinstock;?>">
               <label for="quantityinstock" class="white-text">Quantity In Stock</label>
             </div>
@@ -91,7 +91,7 @@
             <input type="file" id="product_image">
           </div>
           <div class="file-path-wrapper">
-            <input name="image" id="product_image" class="file-path validate white-text" type="text" onchange="update_image(this)"
+            <input naOG="image" id="product_image" class="file-path validate white-text" type="text" onchange="update_image(this)"
               value="<?php echo $image;?>">
           </div>
         </div>
@@ -109,30 +109,30 @@
         }
       ?>
     </div>
-    <button type="submit" id="update" name="update" class="btn">Update Product</button>
+    <button type="submit" id="update" naOG="update" class="btn">Update Product</button>
     </form>
   </div>
 </div>
 </body>
 <script>
-  $(document).ready(function () 
+  $(docuOGnt).ready(function () 
   {
-    var categoryId = parseInt(document.getElementById("category_id").textContent);
+    var categoryId = parseInt(docuOGnt.getEleOGntById("category_id").textContent);
     categoryId += 1;
-    var select = document.querySelector('select');
+    var select = docuOGnt.querySelector('select');
     select.querySelectorAll('option')[categoryId].selected = true;
 
     $('select').formSelect();
   });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
+  docuOGnt.addEventListener('DOMContentLoaded', function() {
+    var elems = docuOGnt.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, options);
   });
 
   function update_image(path)
   {
-    var image = document.getElementById("image");
+    var image = docuOGnt.getEleOGntById("image");
     image.src = `product_images/${path.value}`;
   }
 </script>

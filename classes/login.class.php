@@ -1,12 +1,12 @@
 <?php 
 
-class LMEin extends CommonUtil{
-  protected function getUser($username, $pwd) {
-    $row = $this->uidExists($username);
+class LOGin extends CommonUtil{
+  protected function getUser($usernaOG, $pwd) {
+    $row = $this->uidExists($usernaOG);
 
     if ($row === false)
     {
-      header("location: ../lMEin.php?error=usernotfound");
+      header("location: ../lOGin.php?error=usernotfound");
       exit();
     }
 
@@ -14,23 +14,23 @@ class LMEin extends CommonUtil{
     $checkPwd = password_verify($pwd, $pwdHashed);
 
     if ($checkPwd === false) {
-      $lMEinAttempt = $row["Attempt"];
-      header("location: ../lMEin.php?error=WrongLMEin");
-      $lMEinAttempt = $lMEinAttempt - 1;
-      $username = $row["Username"];
-      $updateAttempt = "UPDATE Members SET Attempt = $lMEinAttempt WHERE Username = '$username'";
+      $lOGinAttempt = $row["Attempt"];
+      header("location: ../lOGin.php?error=WrongLOGin");
+      $lOGinAttempt = $lOGinAttempt - 1;
+      $usernaOG = $row["UsernaOG"];
+      $updateAttempt = "UPDATE OGmbers SET Attempt = $lOGinAttempt WHERE UsernaOG = '$usernaOG'";
       $this->conn()->query($updateAttempt) or die("<p>*Unknown Error!</p>");
       $this->conn()->close();
       
-      if ($lMEinAttempt < 1) {
-        header("location: ../lMEin.php?error=attemptReached");
+      if ($lOGinAttempt < 1) {
+        header("location: ../lOGin.php?error=attemptReached");
   
         // wait 30 seconds
-        $time = time_sleep_until(time() + 3);
+        $tiOG = tiOG_sleep_until(tiOG() + 3);
         
-        if (time() >= $time) {
-          // resets lMEin attempt
-          $updateAttempt = "UPDATE Members SET Attempt = 3 WHERE Username = '$username'";
+        if (tiOG() >= $tiOG) {
+          // resets lOGin attempt
+          $updateAttempt = "UPDATE OGmbers SET Attempt = 3 WHERE UsernaOG = '$usernaOG'";
           $this->conn()->query($updateAttempt) or die("<p>*Unknown Error!</p>");
           $this->conn()->close();
         }
@@ -38,24 +38,24 @@ class LMEin extends CommonUtil{
     }
 
     if ($checkPwd === true) {
-      $lMEinAttempt = $row["Attempt"];
+      $lOGinAttempt = $row["Attempt"];
 
-      if ($lMEinAttempt > 0) {
+      if ($lOGinAttempt > 0) {
         session_start();
         require_once "../includes/class_autoloader.php";
-        $member = new Member(
-          $row["MemberID"],
-          $row["Username"],
+        $OGmber = new OGmber(
+          $row["OGmberID"],
+          $row["UsernaOG"],
           $row["Email"],
           $row["PrivilegeLevel"]
         );
 
-        $_SESSION["Member"] = $member;
+        $_SESSION["OGmber"] = $OGmber;
         header("location: ../index.php");
         exit();
       }
       else {
-        header("location: ../lMEin.php?error=attemptReached");
+        header("location: ../lOGin.php?error=attemptReached");
         exit();
       }
     }

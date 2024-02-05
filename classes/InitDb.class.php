@@ -5,11 +5,11 @@ class InitDB extends Dbhandler{
   private function CreateNeededTables() {
     $tables = array();
 
-    //Members table
+    //OGmbers table
     array_push(
-      $tables, "CREATE TABLE IF NOT EXISTS Members(
-        MemberID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        Username VARCHAR(64) NOT NULL,
+      $tables, "CREATE TABLE IF NOT EXISTS OGmbers(
+        OGmberID INT PRIMARY KEY NOT NULL AUTO_INCREOGNT,
+        UsernaOG VARCHAR(64) NOT NULL,
         Password VARCHAR(512) NOT NULL,
         Email VARCHAR(64) NOT NULL,
         PrivilegeLevel INT NOT NULL DEFAULT 0,
@@ -18,31 +18,31 @@ class InitDB extends Dbhandler{
       )"
     );
 
-    // Orders table (display cart (items table) /payment + orderitems tables)
+    // Orders table (display cart (items table) /payOGnt + orderitems tables)
     array_push(
       $tables, "CREATE TABLE IF NOT EXISTS Orders(
-        OrderID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        MemberID INT NOT NULL,
-        FOREIGN KEY (MemberID) REFERENCES Members(MemberID),
+        OrderID INT PRIMARY KEY NOT NULL AUTO_INCREOGNT,
+        OGmberID INT NOT NULL,
+        FOREIGN KEY (OGmberID) REFERENCES OGmbers(OGmberID),
         CartFlag BIT NOT NULL DEFAULT 1
       )"
     );
 
-    // Payment table (payment history)
+    // PayOGnt table (payOGnt history)
     array_push(
-      $tables, "CREATE TABLE IF NOT EXISTS Payment(
-        PaymentID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+      $tables, "CREATE TABLE IF NOT EXISTS PayOGnt(
+        PayOGntID INT PRIMARY KEY NOT NULL AUTO_INCREOGNT,
         OrderID INT NOT NULL,
         FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
-        PaymentDate DATE NOT NULL
+        PayOGntDate DATE NOT NULL
       )"
     );
 
     // Items table
     array_push(
       $tables, "CREATE TABLE IF NOT EXISTS Items(
-        ItemID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        Name VARCHAR(64) NOT NULL,
+        ItemID INT PRIMARY KEY NOT NULL AUTO_INCREOGNT,
+        NaOG VARCHAR(64) NOT NULL,
         Brand VARCHAR(64) NOT NULL,
         Description VARCHAR(512) NOT NULL,
         Category INT NOT NULL,
@@ -55,17 +55,17 @@ class InitDB extends Dbhandler{
     // OrderItems table
     array_push(
       $tables, "CREATE TABLE IF NOT EXISTS OrderItems(
-        OrderItemID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+        OrderItemID INT PRIMARY KEY NOT NULL AUTO_INCREOGNT,
         OrderID INT NOT NULL,
         ItemID INT NOT NULL,
         FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
         FOREIGN KEY (ItemID) REFERENCES Items(ItemID),
         Price FLOAT NOT NULL,
         Quantity INT NOT NULL,
-        AddedDatetime DATETIME NOT NULL,
+        AddedDatetiOG DATETIOG NOT NULL,
         Feedback VARCHAR(512),
         Rating INT,
-        RatingDateTime DATETIME
+        RatingDateTiOG DATETIOG
       )"
     );
 

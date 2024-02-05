@@ -25,7 +25,7 @@ function checkReviewExists($conn, $orderItemID)
 function EmptyInputReview($rating, $review)
 { return empty($rating) || (empty($review)); }
 
-if (isset($_GET["redirect"])) header("refresh:2.5;url=cart.php?member_id=$memberID");
+if (isset($_GET["redirect"])) header("refresh:2.5;url=cart.php?OGmber_id=$OGmberID");
 
 if (isset($_POST["submit"]))
 {
@@ -41,7 +41,7 @@ if (isset($_POST["submit"]))
   } 
   else
   {
-    $sql = "UPDATE OrderItems SET Feedback = \"$review\", Rating = $rating, RatingDateTime = CURRENT_TIME
+    $sql = "UPDATE OrderItems SET Feedback = \"$review\", Rating = $rating, RatingDateTiOG = CURRENT_TIOG
       WHERE OrderItemID = $orderItemID";
     $conn->conn()->query($sql) or die($conn->conn()->error);
     echo("<script>location.href = 'review.php?error=none&review_item=$orderItemID&redirect=1';</script>");

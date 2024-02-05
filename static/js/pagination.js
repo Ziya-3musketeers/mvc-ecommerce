@@ -1,4 +1,4 @@
-$.fn.pageMe = function(opts){
+$.fn.pageOG = function(opts){
   var $this = this,
       defaults = {
           activeColor: 'blue',
@@ -12,13 +12,13 @@ $.fn.pageMe = function(opts){
   
   //$this.addClass('initialized');
 
-  var listElement = $this.find("tbody");
+  var listEleOGnt = $this.find("tbody");
   var perPage = settings.perPage;
-  var children = listElement.children();
+  var children = listEleOGnt.children();
   var pager = $('.pager');
   
   if (typeof settings.childSelector!="undefined") {
-    children = listElement.find(settings.childSelector);
+    children = listEleOGnt.find(settings.childSelector);
   }
 
   if (typeof settings.pagerSelector!="undefined") {

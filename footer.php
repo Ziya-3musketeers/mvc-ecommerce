@@ -1,12 +1,12 @@
 <footer class="page-footer" style="margin-top: 120px; box-shadow: 0px 0px 2px white; background-color: rgb(17,17,17)">
   <div class="row wide-container">
     <div class="col s3">
-      <h4 class="white-text bold underline">ME Tech PC</h4>
+      <h4 class="white-text bold underline">OG Tech PC</h4>
       <p class="grey-text text-lighten-4">Your favorite online PC store.</p>
     </div>
     <div class="col s2">
       <h5 class="white-text bold"  style=' text-decoration: underline'>Support</h5>
-      <p><a class='dropdown-trigger white-text bold' href='#' data-target='dropdown1'>Customer Care 
+      <p><a class='dropdown-trigger white-text bold' href='#' data-target='dropdown1'>CustoOGr Care 
         <i class='material-icons' style=' text-decoration: none !important; display: inline-flex; vertical-align: top;'>arrow_drop_down</i>
       </a></p>
       <ul id='dropdown1' class='dropdown-content white'>
@@ -42,16 +42,16 @@
     </div>
   </div>
   <div class="footer-copyright" style="padding-bottom: 20px;">
-    <div class="wide-container underline">© 2021 ME Tech PC All rights reserved.</div>
+    <div class="wide-container underline">© 2021 OG Tech PC All rights reserved.</div>
   </div>
 
   <script>
-    $(document).ready(function() {
+    $(docuOGnt).ready(function() {
       $('.dropdown-trigger').dropdown({
         coverTrigger: false
       });
 
-      $('#pagination').pageMe({
+      $('#pagination').pageOG({
         pagerSelector:'#myPager',
         activeColor: 'blue',
         prevText:'Previous',

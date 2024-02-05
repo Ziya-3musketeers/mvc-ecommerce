@@ -1,23 +1,23 @@
 <?php
   require_once "includes/class_autoloader.php";
-  if (isset($_GET["member_id"]))
+  if (isset($_GET["OGmber_id"]))
   {
-    /** @var int $memberID */
-    $memberID = $_GET["member_id"];
-    $member = Member::CreateMemberFromID($memberID);
-    $orders = $member->getOrders();
+    /** @var int $OGmberID */
+    $OGmberID = $_GET["OGmber_id"];
+    $OGmber = OGmber::CreateOGmberFromID($OGmberID);
+    $orders = $OGmber->getOrders();
     $orderCount = count($orders);
   }
 ?>
 
 <div class="row" style="margin-top: 100px; margin-bottom: 50px; border-bottom: 3px solid #bbb">
-  <h4 class="page-title">Payment History / Previous Orders</h4>
+  <h4 class="page-title">PayOGnt History / Previous Orders</h4>
 </div>
 
 <?php
   if ($orderCount <= 0) 
     echo("<h5 class='grey-text page-title'>There are no orders yet. How about 
-    <a href='product_catalMEue.php?query='>making some orders</a>? :)</h5>");
+    <a href='product_catalOGue.php?query='>making soOG orders</a>? :)</h5>");
 
   else
   {
@@ -36,15 +36,15 @@
     {
       $idx = $i+1;
 
-      $sql = "SELECT P.OrderID, P.PaymentDate, OI.OrderID FROM Payment P, OrderItems OI
+      $sql = "SELECT P.OrderID, P.PayOGntDate, OI.OrderID FROM PayOGnt P, OrderItems OI
       WHERE P.OrderID = OI.OrderID";
       $dbh = new Dbhandler();
       $result = $dbh->conn()->query($sql);
       while ($row = $result->fetch_assoc()) {
-        $paymentDate = $row["PaymentDate"];
+        $payOGntDate = $row["PayOGntDate"];
       }
 
-      echo("<h5 class='white-text page-title'>#$idx Paid: $paymentDate</h5>");
+      echo("<h5 class='white-text page-title'>#$idx Paid: $payOGntDate</h5>");
       // row starting point
       echo("<div class='row'>");
       // prev order list starting point
@@ -60,7 +60,7 @@
       {
         $orderItem = $orderItems[$o];
         $item = new Item($orderItem->getItemID());
-        generateBoughtItem($item, $orderItem, $memberID);
+        generateBoughtItem($item, $orderItem, $OGmberID);
 
         $quantity = $orderItem->getQuantity();
         $price = $orderItem->getPrice();
