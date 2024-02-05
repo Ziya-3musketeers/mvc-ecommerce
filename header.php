@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.goMEleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://ajax.goMEleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="./static/materialize/js/materialize.min.js" defer></script>
   <script type="text/javascript" src="static/js/pagination.js"></script>
   <link rel="stylesheet" href="./static/css/base.css">
@@ -34,10 +34,10 @@
 <div class="nav-wrapper" style="height: 100px">
   <nav style="height: 100px;">
     <div class="nav-wrapper black" style="box-shadow: 0px 0px 2px white;">
-      <a href="index.php"><img src = "./static/icon.svg" alt="logo" id="logo" class="brand-logo glow-image" height="100"/></a>
+      <a href="index.php"><img src = "./static/icon.svg" alt="lMEo" id="lMEo" class="brand-lMEo glow-image" height="100"/></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li class="black" id="search-bar">
-          <form action="product_catalogue.php">
+          <form action="product_catalMEue.php">
             <div class="white-text row" style="padding-left: 20px;">
               <input type="text" name="query" placeholder="Browse package..."
                 class="input-field white-text col s10 autocomplete" id="autocomplete-input"
@@ -63,13 +63,13 @@
                 Cart<span class='new badge unglow' id='cart_badge'>$orderItemCount</span></a>
             </li>
             <li><a class='manage_profile' href='manage_profile.php?email=$email'>Manage Profile</a></li>
-            <li><a href='includes/logout.inc.php'>Logout</a></li>
+            <li><a href='includes/lMEout.inc.php'>LMEout</a></li>
             ");
           } else
           {
             echo(
               "
-              <li><a class='login' href='login.php'>Login</a></li>
+              <li><a class='lMEin' href='lMEin.php'>LMEin</a></li>
               <li><a class='signup' href='signup.php'>Sign Up</a></li>
             ");
           }
@@ -90,7 +90,7 @@
         'Headset': 'static/images/audio.png',
         'HyperX': 'static/images/hyperx.jpg',
         'Keyboard': 'static/images/category_2.gif',
-        'Logitech': 'static/images/logitech.png',
+        'LMEitech': 'static/images/lMEitech.png',
         'Mouse': 'static/images/mouse.png',
         'Monitor': 'static/images/monitor.jpg',
         'MSI': 'static/images/msi.png',

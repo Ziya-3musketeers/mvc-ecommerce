@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Warranty form - OG Tech</title>
+<title>Warranty form - ME Tech</title>
 <?php include "header.php";?>
 
 <style>
@@ -51,12 +51,12 @@
 
 <div class="page-title background-overlay" style="text-align:center;padding-top: 140px;padding-bottom: 140px">
 <h1 style="font-weight:bold">Warranty Form</h1>
-<p class="text">OG Tech / Warranty Form</p>
+<p class="text">ME Tech / Warranty Form</p>
 </div>
 
 <div class="textbox">
 	<p class="text">What a disaster! Your computer has failed, and you’re too busy to take it to the shop to get it ﬁx. Lucky for you, 
-		you’re covered with the OG TECH Pick-up & Return Service! We’ll pick-up your computer or hardware or replace it, and bring it back to you at your convenience, saving you time and money.</p>
+		you’re covered with the ME TECH Pick-up & Return Service! We’ll pick-up your computer or hardware or replace it, and bring it back to you at your convenience, saving you time and money.</p>
 	<br><br>
 	<form method="post">
 	<table class="text">

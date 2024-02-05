@@ -32,7 +32,7 @@
         {
           if ($cartItemCount <= 0) 
             echo("<h5 class='grey-text page-title'>Your shopping cart is empty.</h5><h6 class='grey-text page-title'>
-              <a href='product_catalogue.php?query='>Shop Now!</a></h6>");
+              <a href='product_catalMEue.php?query='>Shop Now!</a></h6>");
           
           else if ($cartItemCount >= 0){
             echo("

@@ -17,7 +17,7 @@
 <?php
   if ($orderCount <= 0) 
     echo("<h5 class='grey-text page-title'>There are no orders yet. How about 
-    <a href='product_catalogue.php?query='>making some orders</a>? :)</h5>");
+    <a href='product_catalMEue.php?query='>making some orders</a>? :)</h5>");
 
   else
   {

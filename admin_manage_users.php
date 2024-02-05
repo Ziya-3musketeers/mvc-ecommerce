@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OG Tech - Manage Users Panel</title>
+  <title>ME Tech - Manage Users Panel</title>
   <?php
     include "header.php"; 
     include "static/pages/side_nav.html";

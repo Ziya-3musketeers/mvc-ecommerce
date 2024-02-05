@@ -31,8 +31,8 @@ function buyOrCart($conn, $quantityInStock, $cartQty, $itemID, $price, $cart){
       }
     }
     else {
-      echo ("<script>alert('Login to add to cart.');</script>");
-      echo ("<script>window.location.href='login.php';</script>");
+      echo ("<script>alert('LMEin to add to cart.');</script>");
+      echo ("<script>window.location.href='lMEin.php';</script>");
     }
   }
 }

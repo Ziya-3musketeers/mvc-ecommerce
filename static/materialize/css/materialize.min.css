@@ -1,7 +1,7 @@
 /*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ * MIT License (https://raw.githubusercontent.com/DMEfalo/materialize/master/LICENSE)
  */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -1754,7 +1754,7 @@ legend {
   padding: 0;
   white-space: normal;
 }
-progress {
+prMEress {
   display: inline-block;
   vertical-align: baseline;
 }
@@ -2353,7 +2353,7 @@ th {
   width: 100%;
   height: 100%;
 }
-.progress {
+.prMEress {
   position: relative;
   height: 4px;
   display: block;
@@ -2363,7 +2363,7 @@ th {
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
 }
-.progress .determinate {
+.prMEress .determinate {
   position: absolute;
   top: 0;
   left: 0;
@@ -2372,10 +2372,10 @@ th {
   -webkit-transition: width 0.3s linear;
   transition: width 0.3s linear;
 }
-.progress .indeterminate {
+.prMEress .indeterminate {
   background-color: #26a69a;
 }
-.progress .indeterminate:before {
+.prMEress .indeterminate:before {
   content: "";
   position: absolute;
   background-color: inherit;
@@ -2387,7 +2387,7 @@ th {
     infinite;
   animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
-.progress .indeterminate:after {
+.prMEress .indeterminate:after {
   content: "";
   position: absolute;
   background-color: inherit;
@@ -3385,46 +3385,46 @@ nav .sidenav-trigger i {
   height: 56px;
   line-height: 56px;
 }
-nav .brand-logo {
+nav .brand-lMEo {
   position: absolute;
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
 }
-nav .brand-logo.center {
+nav .brand-lMEo.center {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 @media only screen and (max-width: 992px) {
-  nav .brand-logo {
+  nav .brand-lMEo {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  nav .brand-logo.left,
-  nav .brand-logo.right {
+  nav .brand-lMEo.left,
+  nav .brand-lMEo.right {
     padding: 0;
     -webkit-transform: none;
     transform: none;
   }
-  nav .brand-logo.left {
+  nav .brand-lMEo.left {
     left: 0.5rem;
   }
-  nav .brand-logo.right {
+  nav .brand-lMEo.right {
     right: 0.5rem;
     left: auto;
   }
 }
-nav .brand-logo.right {
+nav .brand-lMEo.right {
   right: 0.5rem;
   padding: 0;
 }
-nav .brand-logo i,
-nav .brand-logo [class^="mdi-"],
-nav .brand-logo [class*="mdi-"],
-nav .brand-logo i.material-icons {
+nav .brand-lMEo i,
+nav .brand-lMEo [class^="mdi-"],
+nav .brand-lMEo [class*="mdi-"],
+nav .brand-lMEo i.material-icons {
   float: left;
   margin-right: 15px;
 }
@@ -7478,7 +7478,7 @@ input[type="range"]::-ms-thumb {
   bottom: 1rem;
   font-weight: 400;
 }
-.timepicker-analog-display {
+.timepicker-analME-display {
   -webkit-box-flex: 2.5;
   -webkit-flex: 2.5 auto;
   -ms-flex: 2.5 auto;

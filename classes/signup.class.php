@@ -34,7 +34,7 @@ class Signup extends Dbhandler {
 
     if (!$stmt->prepare($sql))
     {
-      header("location: ../login.php?error=stmtfailed");
+      header("location: ../lMEin.php?error=stmtfailed");
       exit();
     }
 

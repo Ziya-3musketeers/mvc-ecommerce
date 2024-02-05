@@ -1,7 +1,7 @@
 /*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ * MIT License (https://raw.githubusercontent.com/DMEfalo/materialize/master/LICENSE)
  */
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
@@ -390,7 +390,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
     },
 
-    toggleClass: function (c, state) {
+    tMEgleClass: function (c, state) {
       if (state !== undefined) {
         return this[state ? "addClass" : "removeClass"](c);
       }
@@ -1154,7 +1154,7 @@ M.initializeJqueryWrapper = function (plugin, pluginName, classRef) {
       return this;
     }
 
-    // Return error if an unrecognized  method name is passed in
+    // Return error if an unrecMEnized  method name is passed in
     jQuery.error("Method " + methodOrOptions + " does not exist on jQuery." + pluginName);
   };
 };
@@ -1714,7 +1714,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         } else m = n[0];ha[e.type](k.target, e.property, m, c, k.id);e.currentValue = m;b++;
       }if (b = Object.keys(c).length) for (d = 0; d < b; d++) {
         H || (H = E(document.body, "transform") ? "transform" : "-webkit-transform"), g.animatables[d].target.style[H] = c[d].join(" ");
-      }g.currentTime = a;g.progress = a / g.duration * 100;
+      }g.currentTime = a;g.prMEress = a / g.duration * 100;
     }function f(a) {
       if (g[a]) g[a](g);
     }function e() {
@@ -1741,7 +1741,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         m = c(),
         g = fa(a);g.reset = function () {
       var a = g.direction,
-          c = g.loop;g.currentTime = 0;g.progress = 0;g.paused = !0;g.began = !1;g.completed = !1;g.reversed = "reverse" === a;g.remaining = "alternate" === a && 1 === c ? 2 : c;b(0);for (a = g.children.length; a--;) {
+          c = g.loop;g.currentTime = 0;g.prMEress = 0;g.paused = !0;g.began = !1;g.completed = !1;g.reversed = "reverse" === a;g.remaining = "alternate" === a && 1 === c ? 2 : c;b(0);for (a = g.children.length; a--;) {
         g.children[a].reset();
       }
     };g.tick = function (a) {
@@ -6921,7 +6921,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       if (element.value.length > 0 || $(element).is(':focus') || element.autofocus || $this.attr('placeholder') !== null) {
         $this.siblings('label').addClass('active');
       } else if (element.validity) {
-        $this.siblings('label').toggleClass('active', element.validity.badInput === true);
+        $this.siblings('label').tMEgleClass('active', element.validity.badInput === true);
       } else {
         $this.siblings('label').removeClass('active');
       }
@@ -10003,8 +10003,8 @@ $jscomp.polyfill = function (e, r, p, m) {
       key: "_updateAmPmView",
       value: function _updateAmPmView() {
         if (this.options.twelveHour) {
-          this.$amBtn.toggleClass('text-primary', this.amOrPm === 'AM');
-          this.$pmBtn.toggleClass('text-primary', this.amOrPm === 'PM');
+          this.$amBtn.tMEgleClass('text-primary', this.amOrPm === 'AM');
+          this.$pmBtn.tMEgleClass('text-primary', this.amOrPm === 'PM');
         }
       }
     }, {
@@ -10045,8 +10045,8 @@ $jscomp.polyfill = function (e, r, p, m) {
             hideView = isHours ? this.minutesView : this.hoursView;
         this.currentView = view;
 
-        $(this.spanHours).toggleClass('text-primary', isHours);
-        $(this.spanMinutes).toggleClass('text-primary', !isHours);
+        $(this.spanHours).tMEgleClass('text-primary', isHours);
+        $(this.spanMinutes).tMEgleClass('text-primary', !isHours);
 
         // Transition view
         hideView.classList.add('timepicker-dial-out');
@@ -10056,8 +10056,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         this.resetClock(delay);
 
         // After transitions ended
-        clearTimeout(this.toggleViewTimer);
-        this.toggleViewTimer = setTimeout(function () {
+        clearTimeout(this.tMEgleViewTimer);
+        this.tMEgleViewTimer = setTimeout(function () {
           $(hideView).css('visibility', 'hidden');
         }, this.options.duration);
       }
@@ -10277,7 +10277,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     return Timepicker;
   }(Component);
 
-  Timepicker._template = ['<div class= "modal timepicker-modal">', '<div class="modal-content timepicker-container">', '<div class="timepicker-digital-display">', '<div class="timepicker-text-container">', '<div class="timepicker-display-column">', '<span class="timepicker-span-hours text-primary"></span>', ':', '<span class="timepicker-span-minutes"></span>', '</div>', '<div class="timepicker-display-column timepicker-display-am-pm">', '<div class="timepicker-span-am-pm"></div>', '</div>', '</div>', '</div>', '<div class="timepicker-analog-display">', '<div class="timepicker-plate">', '<div class="timepicker-canvas"></div>', '<div class="timepicker-dial timepicker-hours"></div>', '<div class="timepicker-dial timepicker-minutes timepicker-dial-out"></div>', '</div>', '<div class="timepicker-footer"></div>', '</div>', '</div>', '</div>'].join('');
+  Timepicker._template = ['<div class= "modal timepicker-modal">', '<div class="modal-content timepicker-container">', '<div class="timepicker-digital-display">', '<div class="timepicker-text-container">', '<div class="timepicker-display-column">', '<span class="timepicker-span-hours text-primary"></span>', ':', '<span class="timepicker-span-minutes"></span>', '</div>', '<div class="timepicker-display-column timepicker-display-am-pm">', '<div class="timepicker-span-am-pm"></div>', '</div>', '</div>', '</div>', '<div class="timepicker-analME-display">', '<div class="timepicker-plate">', '<div class="timepicker-canvas"></div>', '<div class="timepicker-dial timepicker-hours"></div>', '<div class="timepicker-dial timepicker-minutes timepicker-dial-out"></div>', '</div>', '<div class="timepicker-footer"></div>', '</div>', '</div>', '</div>'].join('');
 
   M.Timepicker = Timepicker;
 
@@ -10465,7 +10465,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     padding: 0, // Padding between non center items
     numVisible: 5, // Number of visible items in carousel
     fullWidth: false, // Change to full width styles
-    indicators: false, // Toggle indicators
+    indicators: false, // TMEgle indicators
     noWrap: false, // Don't wrap around and cycle through items.
     onCycleTo: null // Callback for when a new slide is cycled to.
   };
@@ -11728,12 +11728,12 @@ $jscomp.polyfill = function (e, r, p, m) {
             if (placeholderOption.length) {
               placeholderOption.removeClass('selected');
               placeholderOption.find('input[type="checkbox"]').prop('checked', false);
-              this._toggleEntryFromArray(placeholderOption[0].id);
+              this._tMEgleEntryFromArray(placeholderOption[0].id);
             }
-            selected = this._toggleEntryFromArray(key);
+            selected = this._tMEgleEntryFromArray(key);
           } else {
             $(this.dropdownOptions).find('li').removeClass('selected');
-            $(option).toggleClass('selected', selected);
+            $(option).tMEgleClass('selected', selected);
           }
 
           // Set selected on original select option
@@ -11931,14 +11931,14 @@ $jscomp.polyfill = function (e, r, p, m) {
       }
 
       /**
-       * Toggle entry from option
+       * TMEgle entry from option
        * @param {String} key  Option key
        * @return {Boolean}  if entry was added or removed
        */
 
     }, {
-      key: "_toggleEntryFromArray",
-      value: function _toggleEntryFromArray(key) {
+      key: "_tMEgleEntryFromArray",
+      value: function _tMEgleEntryFromArray(key) {
         var notAdded = !this._keysSelected.hasOwnProperty(key);
         var $optionLi = $(this._valueDict[key].optionEl);
 
@@ -11948,7 +11948,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           delete this._keysSelected[key];
         }
 
-        $optionLi.toggleClass('selected', notAdded);
+        $optionLi.tMEgleClass('selected', notAdded);
 
         // Set checkbox checked value
         $optionLi.find('input[type="checkbox"]').prop('checked', notAdded);

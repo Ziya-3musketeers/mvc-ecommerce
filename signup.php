@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OG Tech - Sign Up</title>
+<title>ME Tech - Sign Up</title>
 <?php include "header.php"; ?>
 
 <form action="includes/signup.inc.php" method="POST">
@@ -57,7 +57,7 @@
                 echo "<p>*Username/Email already taken!</p>";
                 
               else if ($_GET["error"] == "none")
-                echo "<p class='green-text bold'>You have signed up! Please go to Login page</p>";
+                echo "<p class='green-text bold'>You have signed up! Please go to LMEin page</p>";
                 echo '<META HTTP-EQUIV="Refresh" Content="2; URL=signup.php">';
                 exit();
             }

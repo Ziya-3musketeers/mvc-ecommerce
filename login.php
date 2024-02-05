@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OG Tech PC - Login</title>
+<title>ME Tech PC - LMEin</title>
 <?php include "header.php"; ?>
 
-<form method="POST" action="includes/login.inc.php">
+<form method="POST" action="includes/lMEin.inc.php">
   <div class="container">
-    <h3 class="grid underline">Login</h3>
+    <h3 class="grid underline">LMEin</h3>
     <div class="rounded-card-parent center">
       <div class="card rounded-card">
         <div class="row">
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="row">
-          <button type="submit" name="submit" class="btn" style="margin-left: 10px">Login</button>
+          <button type="submit" name="submit" class="btn" style="margin-left: 10px">LMEin</button>
         </div>
         <div class="row">
           <span class="white-text">Not yet a member?</span>
@@ -34,14 +34,14 @@
               {
                 if ($_GET["error"] == "empty_input")
                   echo "<p>*Fill in all fields!</p>";
-                else if ($_GET["error"] == "WrongLogin")
+                else if ($_GET["error"] == "WrongLMEin")
                   echo "<p>*Incorrect credentials!</p>";
                 else if ($_GET["error"] == "usernotfound")
                   echo "<p>*User does not exists!</p>";
                 else if ($_GET["error"] == "stmtfailed")
                   echo "<p>*SQL ERROR! Try Again Later.</p>";
                 else if ($_GET["error"] == "attemptReached")
-                  echo "<p>*Too many failed login attempts! Try again after 15 seconds.</p>";
+                  echo "<p>*Too many failed lMEin attempts! Try again after 15 seconds.</p>";
               }
             ?>
           </div>

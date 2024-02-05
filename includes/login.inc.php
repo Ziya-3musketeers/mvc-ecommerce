@@ -6,11 +6,11 @@ if (isset($_POST["submit"])) {
   $username = $_POST["username"];
   $pwd = $_POST["pwd"];
 
-  $login = new LoginContr($username, $pwd);
+  $lMEin = new LMEinContr($username, $pwd);
 
-  $login->LoginUser();
+  $lMEin->LMEinUser();
 } else
 {
-  header("location: ../login.php");
+  header("location: ../lMEin.php");
   exit();
 }

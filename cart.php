@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OG Tech PC - Cart</title>
+<title>ME Tech PC - Cart</title>
 <?php include "header.php"; ?>
 
 <div class="wide-container">

@@ -2,7 +2,7 @@
   require_once "class_autoloader.php";
 
   const CATEGORY_NAMES = ["PC Packages", "Monitor & Audio", "Peripherals"];
-  const BRAND_NAMES = ["Asus", "MSI", "Razer", "Logitech", "Viewsonic", "Acer", "HyperX", "Steelseries", "Corsair"];
+  const BRAND_NAMES = ["Asus", "MSI", "Razer", "LMEitech", "Viewsonic", "Acer", "HyperX", "Steelseries", "Corsair"];
   const SORT_NAMES = ["Price low to high", "Price high to low"];
   const VIEW_NAMES = ["List"];
 

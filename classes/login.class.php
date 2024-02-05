@@ -1,12 +1,12 @@
 <?php 
 
-class Login extends CommonUtil{
+class LMEin extends CommonUtil{
   protected function getUser($username, $pwd) {
     $row = $this->uidExists($username);
 
     if ($row === false)
     {
-      header("location: ../login.php?error=usernotfound");
+      header("location: ../lMEin.php?error=usernotfound");
       exit();
     }
 
@@ -14,22 +14,22 @@ class Login extends CommonUtil{
     $checkPwd = password_verify($pwd, $pwdHashed);
 
     if ($checkPwd === false) {
-      $loginAttempt = $row["Attempt"];
-      header("location: ../login.php?error=WrongLogin");
-      $loginAttempt = $loginAttempt - 1;
+      $lMEinAttempt = $row["Attempt"];
+      header("location: ../lMEin.php?error=WrongLMEin");
+      $lMEinAttempt = $lMEinAttempt - 1;
       $username = $row["Username"];
-      $updateAttempt = "UPDATE Members SET Attempt = $loginAttempt WHERE Username = '$username'";
+      $updateAttempt = "UPDATE Members SET Attempt = $lMEinAttempt WHERE Username = '$username'";
       $this->conn()->query($updateAttempt) or die("<p>*Unknown Error!</p>");
       $this->conn()->close();
       
-      if ($loginAttempt < 1) {
-        header("location: ../login.php?error=attemptReached");
+      if ($lMEinAttempt < 1) {
+        header("location: ../lMEin.php?error=attemptReached");
   
         // wait 30 seconds
         $time = time_sleep_until(time() + 3);
         
         if (time() >= $time) {
-          // resets login attempt
+          // resets lMEin attempt
           $updateAttempt = "UPDATE Members SET Attempt = 3 WHERE Username = '$username'";
           $this->conn()->query($updateAttempt) or die("<p>*Unknown Error!</p>");
           $this->conn()->close();
@@ -38,9 +38,9 @@ class Login extends CommonUtil{
     }
 
     if ($checkPwd === true) {
-      $loginAttempt = $row["Attempt"];
+      $lMEinAttempt = $row["Attempt"];
 
-      if ($loginAttempt > 0) {
+      if ($lMEinAttempt > 0) {
         session_start();
         require_once "../includes/class_autoloader.php";
         $member = new Member(
@@ -55,7 +55,7 @@ class Login extends CommonUtil{
         exit();
       }
       else {
-        header("location: ../login.php?error=attemptReached");
+        header("location: ../lMEin.php?error=attemptReached");
         exit();
       }
     }

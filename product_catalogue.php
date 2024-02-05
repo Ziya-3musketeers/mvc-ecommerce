@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OG Tech PC - Product Catalogue</title>
+    <title>ME Tech PC - Product CatalMEue</title>
     <?php 
       require_once "header.php";
-      require_once "includes/product_catalogue.inc.php";
+      require_once "includes/product_catalMEue.inc.php";
     ?>
   </head>
 
@@ -70,7 +70,7 @@
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Asus</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">MSI</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Razer</a></li>
-                  <li><a class="cyan-text page-title" onclick="select_brand(this)">Logitech</a></li>
+                  <li><a class="cyan-text page-title" onclick="select_brand(this)">LMEitech</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Viewsonic</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">Acer</a></li>
                   <li><a class="cyan-text page-title" onclick="select_brand(this)">HyperX</a></li>
@@ -128,7 +128,7 @@
     "Asus": 0,
     "MSI": 1,
     "Razer": 2,
-    "Logitech": 3,
+    "LMEitech": 3,
     "Viewsonic": 4,
     "Acer": 5,
     "HyperX": 6,

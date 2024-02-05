@@ -1,6 +1,6 @@
 <?php 
 
-class LoginContr extends Login {
+class LMEinContr extends LMEin {
 
   private $username;
   private $pwd;
@@ -21,9 +21,9 @@ class LoginContr extends Login {
     return $result;
   }
 
-  public function LoginUser() {
+  public function LMEinUser() {
     if($this->checkEmptyInput($this->username, $this->pwd) == false) {
-      header("location: ../login.php?error=empty_input");
+      header("location: ../lMEin.php?error=empty_input");
       exit();
     }
     $this->getUser($this->username, $this->pwd); 
