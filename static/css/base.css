@@ -29,7 +29,7 @@
   padding: 0 !important;
 }
 .vertical-tabs li a {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .unglow {
@@ -38,13 +38,13 @@
 
 .page-title {
   color: white;
-  text-shadow: black 4px 0px 8px, black -4px 0px 8px, black 0px 4px 8px,
-    black 0px -4px 8px;
+  text-shadow: rgb(255, 255, 255) 4px 0px 8px, rgb(255, 255, 255) -4px 0px 8px, rgb(255, 255, 255) 0px 4px 8px,
+    rgb(255, 255, 255) 0px -4px 8px;
 }
 
 /* body */
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 /* containers */

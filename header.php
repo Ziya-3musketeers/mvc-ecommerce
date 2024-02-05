@@ -10,7 +10,6 @@
   <script src="./static/materialize/js/materialize.min.js" defer></script>
   <script type="text/javascript" src="static/js/pagination.js"></script>
   <link rel="stylesheet" href="./static/css/base.css">
-  <link rel="icon" type="image/png" style="border-radius: 50%;" href="./static/logoicon.png">
 </head>
 
 <?php
@@ -40,13 +39,13 @@
         <li class="black" id="search-bar">
           <form action="product_catalogue.php">
             <div class="white-text row" style="padding-left: 20px;">
-              <input type="text" name="query" placeholder="Browse products..."
+              <input type="text" name="query" placeholder="Browse package..."
                 class="input-field white-text col s10 autocomplete" id="autocomplete-input"
                 value="<?php if (isset($_GET["query"])) echo($_GET["query"]); ?>"
                 style="font-size: 14px; z-index: 5050;"
               />
               <button value='<?php if (isset($_GET["query"])) echo($_GET["query"]); ?>' 
-                class='btn black underline' style="margin-bottom: 50px; padding-bottom: 50px">
+                class='btn black' style="margin-bottom: 50px; padding-bottom: 50px">
                 <i class='material-icons'>search</i>
               </button>
             </div>
