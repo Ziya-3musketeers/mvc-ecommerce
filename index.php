@@ -51,14 +51,14 @@
   <div class="container" style="margin-top: 100px">
     <div class="row">
       <div class="row" style="margin-bottom: -20px">
-        <h4 class="underline white-text bold center">Categories</h4>
+        <h4 class="white-text bold center">Categories</h4>
       </div>
-      <div class="row hoverable">
-        <div class="col hoverable">
-          <a href="product_catalogue.php?category=0" class="hoverable">
-            <div class="selectable-card hoverable" style="width: 300px; margin: 50px;">
-                <img class="hoverable" src="static/images/category_1.gif"/>
-              <h5 class="white-text center bold hoverable">PC PACKAGES</h5>
+      <div class="row">
+        <div class="col">
+          <a href="product_catalogue.php?category=0">
+            <div class="selectable-card" style="width: 300px; margin: 50px;">
+                <img src="static/images/category_1.gif"/>
+              <h5 class="white-text center bold">PC PACKAGES</h5>
             </div>
           </a>
         </div>
