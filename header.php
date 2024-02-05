@@ -35,7 +35,7 @@
 <div class="nav-wrapper" style="height: 100px">
   <nav style="height: 100px;">
     <div class="nav-wrapper black" style="box-shadow: 0px 0px 2px white;">
-      <a href="index.php"><img src = "./static/logo.svg" alt="logo" id="logo" class="brand-logo glow-image" height="100"/></a>
+      <a href="index.php">A</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li class="black" id="search-bar">
           <form action="product_catalogue.php">
